@@ -1,0 +1,307 @@
+@import "~@/assets/scss/theme.scss";
+
+.ch-wrapper {
+  padding: 100px 0;
+
+  @media (max-width: 1200px) {
+    padding: 50px 0;
+  }
+}
+
+.ch {
+
+  &-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    &__heading {
+      font-family: 'Hammersmith One', sans-serif;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 130%;
+      color: $main-white;
+
+      @media (max-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 36px;
+      }
+    }
+
+    &-menu {
+      display: flex;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 350px) {
+        display: grid;
+        grid-row-gap: 12px;
+        //align-items: center;
+        //justify-content: center;
+      }
+
+      &__item {
+        font-family: 'Sora', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+        color: rgba(235, 238, 246, 0.5);
+        padding-bottom: 10px;
+        position: relative;
+
+        @media (max-width: 1200px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          transition: width .3s;
+          height: 3px;
+          border-radius: 18px;
+          background-color: $blue;
+
+          @media (max-width: 1200px) {
+
+          }
+        }
+
+        &.active, &:hover:not(.tba) {
+          color: $blue;
+          font-weight: 600;
+
+          &::after {
+            width: 70%;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 40px;
+
+          @media (max-width: 1200px) {
+            margin-right: 16px;
+          }
+
+          @media (max-width: 350px) {
+            margin-right: 0;
+          }
+        }
+
+        &.tba {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    grid-column-gap: 60px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 50px;
+    }
+  }
+
+  &-left {
+
+    @media (max-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__portrait {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 100px 0;
+
+      @media (max-width: 1200px) {
+        max-width: 350px;
+        border-radius: 60px 0;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+      font-family: 'Hammersmith One', sans-serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 24px;
+      color: $pink;
+
+      @media (max-width: 1200px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    &__text {
+      position: relative;
+      white-space: pre-line;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: rgba(235, 238, 246, 0.7);
+      margin-bottom: 24px;
+      transition: background .5s, max-height .7s;
+      background: linear-gradient(180deg, rgba(235, 238, 246, 0.7) 63.92%, rgba(235, 238, 246, 0) 95%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-height: 400px;
+      overflow: hidden;
+
+      &.opened {
+        max-height: 3500px;
+        background: transparent;
+        -webkit-text-fill-color: rgba(235, 238, 246, 0.7);
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
+    }
+
+    &__read-full {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      span {
+        white-space: nowrap;
+        position: relative;
+        color: #FF00CC;
+        cursor: pointer;
+        margin: 0 16px;
+        padding-bottom: 1px;
+
+        @supports (-webkit-background-clip: text) {
+          color: transparent;
+          background: linear-gradient(270deg, #DD3775 0%, #FF00CC 100%);
+          -webkit-background-clip: text;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 1px;
+          left: 0;
+          right: 0;
+          background: linear-gradient(270deg, #DD3775 0%, #FF00CC 100%);
+        }
+      }
+
+      div.line {
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(90deg, #FF00CC 0%, rgba(255, 0, 204, 0) 100%);
+
+        &:first-child {
+          transform: rotate(180deg);
+        }
+
+        &:last-child {
+
+        }
+      }
+    }
+
+    &-hint {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      color: $main-white;
+
+
+
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+
+        @media (max-width: 1200px) {
+
+        }
+      }
+
+      &__title {
+        color: $pink;
+        margin-right: 4px;
+
+        @media (max-width: 1200px) {
+
+        }
+      }
+    }
+
+    &__btn {
+      color: $secondary-white;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 16px 36px;
+      background: linear-gradient(270deg, #DD3741 0%, #FF00CC 50.52%, #6003A9 100%);
+      border-radius: 0 16px;
+      align-self: flex-start;
+
+      @media (max-width: 1200px) {
+        padding: 18px 24px;
+        font-size: 14px;
+        line-height: 19px;
+        align-self: center;
+      }
+
+      @media (max-width: 600px) {
+        flex-wrap: wrap;
+        align-self: stretch;
+        padding: 18px 12px;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+::v-deep {
+  .ch-right-hint {
+
+    span a {
+      color: $pink;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "~@/assets/scss/theme.scss";
+
+* {
+  font-family: Exo, sans-serif;
+  color: $main-white;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+ol, ul {
+  margin: 0;
+}

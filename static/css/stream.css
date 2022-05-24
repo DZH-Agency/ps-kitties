@@ -1,0 +1,160 @@
+@import "~/assets/scss/main.scss";
+@import "~/static/css/form.css";
+
+.verification {
+  font-family: "Exo", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-auto-rows: 1fr;
+  background: #0D0E10;
+}
+
+.verification-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.verification-row > div {
+  padding: 50px 100px;
+}
+
+.date {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("~static/img/verification/left-side-bg.png") no-repeat center / cover;
+  z-index: 1;
+}
+
+.date__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border: 2px solid #1CE7D3;
+  border-radius: 0 50px;
+  padding: 40px;
+
+  background: rgba(13, 14, 16, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+.date__logo {
+  margin-bottom: 40px;
+}
+
+.date__text {
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.date__date {
+  margin-top: 24px;
+  font-family: "Hammersmith One", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  color: #00D2FE;
+  padding: 16px 24px;
+  text-align: center;
+
+  border: 2px solid #00D2FE;
+  box-sizing: border-box;
+  border-radius: 0 26px;
+}
+
+.date-note {
+  margin-top: 40px;
+}
+
+.date-note__important {
+  font-family: Hammersmith One, sans-serif;
+  margin-bottom: 10px;
+  color: #FF3E4B;
+  font-size: 20px;
+  line-height: 130%;
+  text-shadow: 0 4px 23px rgba(255, 62, 75, 0.75);
+}
+
+.date-note__logo {
+  margin: 0 4px;
+  transform: translateY(5px);
+  display: inline-block;
+  width: 178px;
+  height: 23px;
+  background: url("~static/img/verification/crypto-com.png") no-repeat bottom / contain;
+}
+
+.verification__hint {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.verification__hint a {
+  color: #ff00ff;
+}
+
+.verification__hint a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .verification-row {
+    grid-template-columns: 1fr;
+  }
+
+  .verification-row > div {
+    padding: 50px 24px;
+  }
+
+  .date__block {
+    max-width: 600px;
+    padding: 40px 24px;
+    border-radius: 0 26px;
+  }
+
+  .date__logo {
+    width: 111px;
+    margin-bottom: 24px;
+  }
+
+  .date__text {
+    font-size: 16px;
+  }
+
+  .date__heading {
+    font-size: 28px;
+    align-self: center;
+  }
+
+  .date__date {
+    padding: 16px;
+    font-size: 24px;
+    border-radius: 0 16px;
+  }
+
+  .date-note {
+    margin-top: 24px;
+  }
+
+  .date-note__important {
+    font-size: 18px;
+  }
+
+  .date-note__logo {
+    width: 143px;
+    height: 19px;
+  }
+
+  /* FORM */
+
+}

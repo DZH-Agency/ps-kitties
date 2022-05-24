@@ -1,0 +1,111 @@
+@import "~@/assets/scss/theme.scss";
+
+.team-wrapper {
+  padding: 100px 0;
+  background:
+          linear-gradient(0deg, rgba(57, 9, 104, 0.2), rgba(57, 9, 104, 0.2)),
+          url("static/TheTeam/bg.png") no-repeat center / cover;
+
+  @media (max-width: 1200px) {
+    padding: 50px 0;
+  }
+}
+
+.team {
+
+  &__title {
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 72px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 36px;
+    }
+  }
+
+  &-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    z-index: 1;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+      grid-row-gap: 25px;
+      grid-template-columns: repeat(auto-fill, minmax(0, 327px));
+    }
+
+    &-member {
+      backdrop-filter: blur(12px);
+      border-radius: 50px 0 50px 0;
+      position: relative;
+      border: 3px solid transparent;
+      background-clip: padding-box;
+
+      @media (max-width: 1200px) {
+        border-width: 2px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: -3px;
+        z-index: -1;
+        border-radius: 50px 0;
+        background: linear-gradient(262.72deg, #1CE7D3 0%, #FF00F8 100%);
+
+        @media (max-width: 1200px) {
+          inset: -2px
+        }
+      }
+
+      &__img {
+        width: 100%;
+        border-top-left-radius: 50px;
+
+        @media (max-width: 1200px) {
+
+        }
+      }
+
+      &-info {
+        background: rgba(13, 14, 16, .7);
+        border-bottom-right-radius: 50px;
+
+        @media (max-width: 1200px) {
+
+        }
+      }
+
+      &__name {
+        text-align: center;
+        padding-top: 24px;
+        margin-bottom: 10px;
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+
+        @media (max-width: 1200px) {
+
+        }
+      }
+
+      &__role {
+        text-align: center;
+        padding-bottom: 30px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(235, 238, 246, 0.7);
+
+        @media (max-width: 1200px) {
+          padding-bottom: 24px;
+        }
+      }
+    }
+  }
+}

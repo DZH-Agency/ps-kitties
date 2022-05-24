@@ -1,0 +1,192 @@
+.form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form__crypto-img {
+  margin: 0 4px;
+  transform: translateY(5px);
+  display: inline-block;
+  width: 178px;
+  height: 23px;
+  background: url("~static/img/verification/crypto-com.png") no-repeat bottom / contain;
+}
+
+.form__heading {
+  font-family: Hammersmith One, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 130%;
+  color: #FF00FF;
+  margin-bottom: 36px;
+}
+
+.form-authenticate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.form__text {
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.form-authenticate__text {
+  margin-right: 20px;
+}
+
+.form-authenticate__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  background: #322B45;
+  box-shadow: 0 48px 48px rgba(0, 0, 0, 0.24);
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-authenticate__btn > img {
+  margin-right: 8px;
+}
+
+.form__block {
+  display: grid;
+  grid-row-gap: 36px;
+  align-self: stretch;
+  margin-bottom: 50px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  margin-bottom: 16px;
+}
+
+.form__group input {
+  background: transparent;
+  border: 2px solid rgba(0, 210, 254, .5);
+  border-radius: 0 16px;
+
+  padding: 20px 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  outline: none;
+  transition: border-color .3s;
+}
+
+.form__group input:focus {
+  border-color: rgba(0, 210, 254, 1)
+}
+
+.form__group input::placeholder {
+  opacity: 0.3;
+}
+
+.form__group input:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, #DD3741 0%, #FF00CC 50.52%, #6003A9 100%);
+  border-radius: 0 16px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FDF7EA;
+  padding: 16px;
+  align-self: stretch;
+  cursor: pointer;
+}
+
+.form__btn:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form__btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.form__group .error {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #FF3E4B;
+  line-height: 130%;
+}
+
+@media (max-width: 1200px) {
+  .form {
+
+  }
+
+  .form__crypto-img {
+    width: 143px;
+    height: 19px;
+  }
+
+  .form__heading {
+    font-size: 34px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 24px;
+  }
+
+  .form-authenticate {
+    margin-bottom: 24px;
+  }
+
+  .form__text {
+    font-size: 16px;
+  }
+
+  .form-authenticate__text {
+    margin-right: 16px;
+  }
+
+  .form-authenticate__btn {
+    padding: 12px 18px;
+    font-size: 18px;
+  }
+
+  .form-authenticate__btn > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .form__block {
+    grid-row-gap: 24px;
+  }
+
+  .form__group label {
+    margin-bottom: 10px;
+  }
+
+  .form__group input {
+    padding: 16px 24px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .form__btn {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}

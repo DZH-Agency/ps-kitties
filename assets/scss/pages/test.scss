@@ -1,0 +1,79 @@
+@import "~@/assets/scss/theme.scss";
+
+.header-section {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background:
+          url("static/general/waves-left.png") no-repeat left top -50px,
+          url("static/general/waves-right.png") no-repeat right top -50px;
+
+  @media (max-width: 1200px) {
+    background: none;
+    padding-top: 100px;
+    padding-bottom: 25px;
+  }
+
+  h1 {
+    padding-top: 24px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    font-family: Hammersmith One, sans-serif;
+
+    @media (max-width: 1200px) {
+      font-size: 36px;
+      line-height: 120%;
+    }
+
+    span {
+      color: $pink;
+    }
+  }
+}
+
+.video-section {
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  &.on-pause {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .4);
+      backdrop-filter: blur(2px);
+    }
+  }
+}
+
+.characters-section {
+  background:
+          url("static/TheCharacters/waves-left.png") repeat-y left top,
+          url("static/TheCharacters/waves-right.png") repeat-y right top;
+
+  @media (max-width: 1200px) {
+    background: none;
+  }
+}
+
+.roadmap-section {
+  background:
+          url("static/general/aside-left.png") no-repeat top -600px left,
+          url("static/general/aside-right.png") no-repeat top -600px right,
+          url("static/general/wave.png") no-repeat bottom center / contain;
+
+  @media (max-width: 1200px) {
+    background: none;
+  }
+}

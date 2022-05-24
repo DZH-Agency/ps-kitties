@@ -1,0 +1,116 @@
+@import "~@/assets/scss/theme.scss";
+
+.lb-wrapper {
+  padding: 100px 0;
+
+  @media (max-width: 1200px) {
+    padding: 50px 0;
+  }
+}
+
+.lb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__heading {
+    margin-bottom: 50px;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 130%;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 36px;
+    }
+  }
+
+  &-table {
+    display: grid;
+    grid-row-gap: 24px;
+
+    @media (max-width: 1200px) {
+      grid-row-gap: 16px;
+    }
+
+    &-head {
+      display: grid;
+      grid-template-columns: 1fr 4fr 2fr;
+      grid-column-gap: 100px;
+      padding: 20px 50px;
+      background: #390968;
+      backdrop-filter: blur(12px);
+      border-radius: 25px 0;
+      border: 1px solid #AF31AA;
+
+      @media (max-width: 1200px) {
+        padding: 16px;
+        grid-column-gap: 40px;
+      }
+
+      &__col {
+        font-family: 'Hammersmith One', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+
+        @media (max-width: 1200px) {
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-body {
+      display: grid;
+      grid-row-gap: 10px;
+      padding: 4px 8px;
+      border: 1px solid #00D2FE;
+      border-radius: 25px 0;
+
+      @media (max-width: 1200px) {
+
+      }
+
+      &__row {
+        padding: 16px 32px;
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-column-gap: 100px;
+
+        @media (max-width: 1200px) {
+          padding: 8px 24px;
+          grid-column-gap: 40px;
+        }
+      }
+
+      &__col {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+
+        @media (max-width: 1200px) {
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+
+          &:first-child {
+            justify-content: flex-start;
+          }
+
+          &:last-child {
+            justify-content: flex-end;
+          }
+        }
+
+        &.top-three {
+          font-weight: 900;
+          color: $pink;
+        }
+      }
+    }
+  }
+}

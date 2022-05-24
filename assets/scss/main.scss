@@ -1,0 +1,62 @@
+@import '~@/assets/scss/reset.scss';
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.ps-container {
+  max-width: 1248px;
+  padding: 0 24px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    max-width: none;
+    margin: unset;
+  }
+
+  @media (max-width: 350px) {
+    padding: 0 12px;
+  }
+}
+
+html, body {
+  background-color: #0D0E10;
+}
+
+.collapsed .navbar-toggler-icon {
+  background-image: url("~static/img/nav-toggle-open.png");
+}
+
+.not-collapsed .navbar-toggler-icon {
+  background-image: url("~static/img/nav-toggle-close.png");
+}
+
+.crypto-com-nft-logo {
+  margin-left: 4px;
+  display: inline-block;
+  width: 178px;
+  height: 23px;
+  background: url("~static/img/verification/crypto-com.png") no-repeat bottom / contain;
+
+  @media (max-width: 1200px) {
+    width: 138px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
