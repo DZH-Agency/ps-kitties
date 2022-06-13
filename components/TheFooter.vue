@@ -13,9 +13,9 @@
             >
               {{ item.title }}
             </a>
-            <nuxt-link to="/verification" class="ft-menu__item">
-              Discord Verification
-            </nuxt-link>
+<!--            <nuxt-link to="/verification" class="ft-menu__item">-->
+<!--              Discord Verification-->
+<!--            </nuxt-link>-->
           </div>
           <nuxt-link to="/terms-and-conditions" class="mobile-only ft-social__terms">PK/PM Terms & Conditions</nuxt-link>
           <div class="ft-social mobile-only">

@@ -12,9 +12,9 @@
           >
             {{ link.title }}
           </nuxt-link>
-          <nuxt-link to="/verification" class="nbr-menu-desktop__item">
-            Discord Verification
-          </nuxt-link>
+<!--          <nuxt-link to="/verification" class="nbr-menu-desktop__item">-->
+<!--            Discord Verification-->
+<!--          </nuxt-link>-->
           <div
             class="nbr-menu-desktop__item socials"
           >
@@ -59,9 +59,9 @@
             <a href="https://discord.gg/psychokitties" target="_blank" class="nbr-mobile-menu__item">
               Discord
             </a>
-            <nuxt-link to="/verification" class="nbr-mobile-menu__item" @click="isOpened = false">
-              Discord Verification
-            </nuxt-link>
+<!--            <nuxt-link to="/verification" class="nbr-mobile-menu__item" @click="isOpened = false">-->
+<!--              Discord Verification-->
+<!--            </nuxt-link>-->
           </div>
         </div>
       </div>
