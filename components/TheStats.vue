@@ -35,7 +35,8 @@ export default {
   },
   computed: {
     theStats() {
-      let donated = (404486).toLocaleString('en-US')
+      // before was 404,486
+      let donated = (587486).toLocaleString('en-US')
       return [
         { title: `$${donated}`, text: 'Donated to charities'},
         { title: `$${(537500).toLocaleString('en-US')}`, text: 'Worth of free partner project NFTs airdropped'},
