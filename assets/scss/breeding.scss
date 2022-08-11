@@ -4,6 +4,29 @@ p {
   margin-bottom: 0;
 }
 
+@counter-style brackets {
+  system: fixed;
+  symbols: '1' '2' '3' '4' '5';
+  suffix: ') ';
+}
+
+.redeem {
+
+  .header-wrapper {
+    background: url("static/img/breeding/header-bg.png") no-repeat center / cover;
+  }
+}
+
+.base {
+
+  .header-wrapper {
+    padding-bottom: 500px;
+    background:
+            url("static/img/breeding/dna-bg-base.png") no-repeat center top / contain,
+            url("static/img/breeding/bottom-bg-base.png") no-repeat center bottom / contain;
+  }
+}
+
 .ps-navbar {
   display: flex;
   align-items: center;
@@ -39,7 +62,6 @@ p {
   &-wrapper {
     padding-bottom: 66px;
     min-height: 100vh;
-    background: url("static/img/breeding/header-bg.png") no-repeat center / cover;
   }
 
   &-tabs {
@@ -84,6 +106,7 @@ p {
     font-size: 52px;
     line-height: 65px;
     text-align: center;
+    text-transform: capitalize;
 
     color: #FFFFFF;
     margin-bottom: 48px;
@@ -207,6 +230,109 @@ p {
       line-height: 130%;
       text-align: center;
       color: #FEFEFE;
+    }
+  }
+
+  &-terms {
+    display: grid;
+    grid-row-gap: 24px;
+
+    &-item {
+      font-weight: 600;
+      font-size: 18px;
+      color: #FEFEFE;
+
+      > *:not(h4) {
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+
+      strong {
+        color: #ff00ff
+      }
+
+      ol {
+        list-style: brackets;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+        }
+      }
+
+      a {
+        color: #00D2FE;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+  }
+
+  &-faq {
+    display: grid;
+    grid-row-gap: 40px;
+
+    &-item {
+
+      &-question {
+        position: relative;
+        border: 3px solid #AF31AA;
+        padding: 20px 48px;
+        background: rgba(57, 9, 104, 0.6);
+        backdrop-filter: blur(20px);
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FF00FF;
+        border-radius: 36px 0;
+
+        &__toggle {
+          cursor: pointer;
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translate(50%, -50%);
+          background: url("static/img/breeding/plus.svg") no-repeat center / cover;
+
+          &.minus {
+            background: url("static/img/breeding/minus.svg") no-repeat center / cover;
+          }
+        }
+      }
+
+      &-content {
+        display: grid;
+        grid-row-gap: 18px;
+        padding: 20px 48px 0 48px;
+
+        ::v-deep {
+          p {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            color: #FEFEFE;
+            margin-bottom: 0;
+          }
+
+          a {
+            color: #00D2FE;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
     }
   }
 }
