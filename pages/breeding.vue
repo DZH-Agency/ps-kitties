@@ -391,7 +391,7 @@ export default {
   ],
   data() {
     return {
-      activeTabKey: this.$options.tabs[2].key,
+      activeTabKey: this.$options.tabs[0].key,
       openedQuestionIdx: null
     }
   },
