@@ -62,7 +62,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 <strong class="tilda">250</strong> points
               </span>
                   <span class="header-stats-items-item__edition">
-                Edition 1
+                Edition 2
               </span>
                 </div>
                 <div class="header-stats-items-item">
@@ -99,7 +99,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </div>
               </div>
               <div class="header-stats__hint">
-                (Points table will be shared in Discord before the breeding season ends)
+                (Points table will be shared in Discord when breeding season ends)
               </div>
             </div>
           </template>
@@ -163,7 +163,9 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                     The other 5 (five) comics are distributed to the holders depending on the amount of hidden staking points they have accumulated by holding their PsychoKitty NFTs, and Mad Hare Society NFTs as follows:
                     <br>
                     <br>
-                    -	from 250 points - Edition 2, from 251 to 500 points - Edition 2 and Edition 3;
+                    -	from 250 points - Edition 2;
+                    <br>
+                    - from 251 to 500 points - Edition 2 and Edition 3;
                     <br>
                     -	from 501 to 750 points - Edition 2, Edition 3 and Edition 4;
                     <br>
@@ -200,10 +202,10 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
           <template v-else-if="activeTabKey === 'faq'">
             <div class="header-faq">
               <div class="header-faq-item" v-for="(item, idx) in $options.faq" :key="idx">
-                <div class="header-faq-item-question">
+                <div @click.stop="openedQuestionIdx = openedQuestionIdx === idx ? null : idx" class="header-faq-item-question">
                   {{item.question}}
                   
-                  <button @click="openedQuestionIdx = openedQuestionIdx === idx ? null : idx" class="header-faq-item-question__toggle" :class="{minus: idx === openedQuestionIdx}"></button>
+                  <button @click.stop="openedQuestionIdx = openedQuestionIdx === idx ? null : idx" class="header-faq-item-question__toggle" :class="{minus: idx === openedQuestionIdx}"></button>
                 </div>
                 <the-accordion :is-opened="idx === openedQuestionIdx">
                   <div class="header-faq-item-content" v-html="item.answer"></div>
