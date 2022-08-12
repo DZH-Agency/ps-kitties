@@ -8,7 +8,7 @@
               <img src="/img/breeding/logo.svg" alt="" class="ps-navbar-brand__img">
             </nuxt-link>
             <a href="https://breeding.psychokitties.io" target="_blank" class="ps-navbar__enter-link">
-              Enter breeding site (not live)
+              Enter breeding site <br class="mobile-only"> (not live)
             </a>
           </div>
         </div>
@@ -59,7 +59,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               <div class="header-stats-items">
                 <div class="header-stats-items-item">
               <span class="header-stats-items-item__text">
-                <strong class="tilda">250</strong> points
+                <strong class="tilda">250</strong> <br> points
               </span>
                   <span class="header-stats-items-item__edition">
                 Edition 2
@@ -67,7 +67,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </div>
                 <div class="header-stats-items-item">
               <span class="header-stats-items-item__text">
-                <strong>251-500</strong> points
+                <strong>251-500</strong> <br> points
               </span>
                   <span class="header-stats-items-item__edition">
                 Edition 2 and 3
@@ -75,7 +75,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </div>
                 <div class="header-stats-items-item">
               <span class="header-stats-items-item__text">
-                <strong>501-750</strong> points
+                <strong>501-750</strong> <br> points
               </span>
                   <span class="header-stats-items-item__edition">
                 Edition 2,3 and 4
@@ -83,7 +83,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </div>
                 <div class="header-stats-items-item">
               <span class="header-stats-items-item__text">
-                <strong>751-1000</strong> points
+                <strong>751-1000</strong> <br> points
               </span>
                   <span class="header-stats-items-item__edition">
                 Edition 2,3,4 and 5
@@ -91,7 +91,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </div>
                 <div class="header-stats-items-item">
               <span class="header-stats-items-item__text">
-                More than <strong>1000</strong> <br> points
+                More than <br> <strong>1000</strong> <br> points
               </span>
                   <span class="header-stats-items-item__edition">
                 Edition 2,3,4,5 and 6
@@ -200,6 +200,9 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
           </template>
           
           <template v-else-if="activeTabKey === 'faq'">
+            <h1 class="header__heading">
+              FAQ
+            </h1>
             <div class="header-faq">
               <div class="header-faq-item" v-for="(item, idx) in $options.faq" :key="idx">
                 <div @click.stop="openedQuestionIdx = openedQuestionIdx === idx ? null : idx" class="header-faq-item-question">
@@ -277,7 +280,13 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
             </div>
             <img src="/img/breeding/how-to-breed.png" alt="" class="staking-how__img">
           </div>
-          
+        </div>
+      </div>
+      
+      <div class="examples-mobile-top"></div>
+  
+      <div class="staking-when-wrapper">
+        <div class="container">
           <div class="staking-when">
             <h2 class="staking-when__title">
               WHEN WILL I RECEIVE MY BABY NFT'S AND COMICS?
@@ -294,6 +303,8 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
       <div class="examples-wrapper">
         <div class="examples"></div>
       </div>
+  
+      <div class="examples-mobile-bottom"></div>
       
       <div class="questions-wrapper">
         <div class="ps-container">
@@ -326,7 +337,7 @@ export default {
     {
       title: 'Terms of Service',
       key: 't&c',
-      wrapperClass: 'base'
+      wrapperClass: 'base terms'
     },
     {
       title: 'FAQ',
@@ -393,7 +404,7 @@ export default {
   ],
   data() {
     return {
-      activeTabKey: this.$options.tabs[0].key,
+      activeTabKey: this.$options.tabs[2].key,
       openedQuestionIdx: null
     }
   },

@@ -24,6 +24,23 @@ p {
     background:
             url("static/img/breeding/dna-bg-base.png") no-repeat center top / contain,
             url("static/img/breeding/bottom-bg-base.png") no-repeat center bottom / contain;
+
+    @media (max-width: 1200px) {
+      padding-bottom: 180px;
+    }
+  }
+}
+
+.terms {
+
+  .header {
+
+    &__heading {
+
+      @media (max-width: 1200px) {
+        margin-bottom: 16px;
+      }
+    }
   }
 }
 
@@ -33,16 +50,27 @@ p {
   justify-content: space-between;
   min-height: 103px;
 
+  @media (max-width: 1200px) {
+    min-height: 82px;
+  }
+
   &-wrapper {
     background: rgba(0, 0, 0, 0.16);
     backdrop-filter: blur(10px);
     margin-bottom: 32px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 12px;
+    }
   }
 
   &-brand {
 
     &__img {
 
+      @media (max-width: 1200px) {
+        width: 65px;
+      }
     }
   }
 
@@ -54,6 +82,12 @@ p {
     line-height: 23px;
     text-decoration-line: underline;
     color: #00D2FE;
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: right;
+    }
   }
 }
 
@@ -62,14 +96,27 @@ p {
   &-wrapper {
     padding-bottom: 66px;
     min-height: 100vh;
+
+    @media (max-width: 1200px) {
+      padding-bottom: 24px;
+    }
   }
 
   &-tabs {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 64px;
+    column-gap: 12px;
     margin-bottom: 48px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 700px) {
+      justify-content: space-between;
+      column-gap: 0;
+    }
 
     &__tab {
       cursor: pointer;
@@ -79,6 +126,11 @@ p {
       line-height: 30px;
       color: #7C7E83;
 
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -86,9 +138,12 @@ p {
         left: 0;
         height: 3px;
         background-color: #00D2FE;
-
         width: 0;
         transition: width .3s;
+
+        @media (max-width: 1200px) {
+          height: 2px;
+        }
       }
 
       &.active {
@@ -107,9 +162,14 @@ p {
     line-height: 65px;
     text-align: center;
     text-transform: capitalize;
-
     color: #FFFFFF;
     margin-bottom: 48px;
+
+    @media (max-width: 1200px) {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 40px;
+    }
   }
 
   &-about {
@@ -122,18 +182,34 @@ p {
     margin-bottom: 48px;
     z-index: 1;
 
+    @media (max-width: 1200px) {
+      padding: 24px 12px 12px 12px;
+      border-radius: 30px 0;
+      margin-bottom: 16px;
+      border-width: 3px;
+      margin-left: 32px;
+    }
+
     &__number-img {
       position: absolute;
       top: 0;
       left: 0;
       transform: translate(-50%, -50%);
       width: 86px;
+
+      @media (max-width: 1200px) {
+        width: 60px;
+      }
     }
 
     &-text {
       font-size: 18px;
       display: grid;
       grid-row-gap: 1em;
+
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
 
       &__text {
         font-weight: 600;
@@ -150,6 +226,10 @@ p {
 
           img {
             width: 21px;
+
+            @media (max-width: 1200px) {
+              width: 19px;
+            }
           }
         }
       }
@@ -163,10 +243,23 @@ p {
     background: rgba(13, 14, 16, 0.7);
     backdrop-filter: blur(10px);
 
+    @media (max-width: 1200px) {
+      border-width: 3px;
+      margin-left: 32px;
+      padding: 16px;
+      border-radius: 0 30px;
+    }
+
     &-items {
       display: flex;
       column-gap: 24px;
       margin-bottom: 32px;
+
+      @media (max-width: 1200px) {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 0;
+      }
 
       &-item {
         border: 2px solid #AF31AA;
@@ -178,12 +271,28 @@ p {
         backdrop-filter: blur(20px);
         border-radius: 25px 0;
 
+        @media (max-width: 1200px) {
+          padding: 12px 4px 4px;
+          flex-grow: 1;
+
+          &:last-child {
+            flex-grow: 0;
+            margin: 0 auto;
+            padding: 12px 24px 4px;
+          }
+        }
+
         &__text {
           color: #fff;
           font-size: 26px;
           line-height: 32px;
           text-align: center;
           font-family: "Hammersmith One", sans-serif;
+
+          @media (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 22px;
+          }
 
           strong {
             color: #FF00FF;
@@ -193,8 +302,17 @@ p {
             align-items: center;
             position: relative;
 
+            @media (max-width: 1200px) {
+              font-size: 28px;
+              line-height: 27px;
+            }
+
             &.tilda {
               margin-left: 15px;
+
+              @media (max-width: 1200px) {
+
+              }
 
               &::before {
                 content: "~";
@@ -206,6 +324,10 @@ p {
                 text-align: center;
                 color: #FF00FF;
                 transform: translate(-100%, -15px);
+
+                @media (max-width: 1200px) {
+                  font-size: 42px;
+                }
               }
             }
           }
@@ -218,6 +340,10 @@ p {
           line-height: 130%;
           text-align: center;
           color: #FF00FF;
+
+          @media (max-width: 1200px) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -230,6 +356,10 @@ p {
       line-height: 130%;
       text-align: center;
       color: #FEFEFE;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
     }
   }
 
@@ -237,18 +367,42 @@ p {
     display: grid;
     grid-row-gap: 24px;
 
+    @media (max-width: 1200px) {
+      grid-row-gap: 16px;
+    }
+
     &-item {
       font-weight: 600;
       font-size: 18px;
       color: #FEFEFE;
 
-      > *:not(h4) {
+      @media (max-width: 1200px) {
+        font-size: 16px;
+      }
+
+      > *:not(h4):not(:last-child) {
         margin-bottom: 12px;
+
+        @media (max-width: 1200px) {
+
+        }
       }
 
       h4 {
         text-transform: uppercase;
-        margin-bottom: 24px;
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+
+        @media (max-width: 1200px) {
+          margin-bottom: 0;
+
+          &:not(:last-child) {
+            margin-bottom: 12px;
+          }
+        }
       }
 
       strong {
@@ -261,6 +415,10 @@ p {
         li {
           &:not(:last-child) {
             margin-bottom: 12px;
+
+            @media (max-width: 1200px) {
+
+            }
           }
         }
       }
@@ -280,6 +438,11 @@ p {
     display: grid;
     grid-row-gap: 40px;
 
+    @media (max-width: 1200px) {
+      padding-right: 16px;
+      grid-row-gap: 24px;
+    }
+
     &-item {
 
       &-question {
@@ -295,6 +458,14 @@ p {
         color: #FF00FF;
         border-radius: 36px 0;
 
+        @media (max-width: 1200px) {
+          padding: 12px 24px 8px 16px;
+          font-size: 18px;
+          line-height: 22px;
+          border-width: 2px;
+          border-radius: 16px 0;
+        }
+
         &__toggle {
           cursor: pointer;
           width: 70px;
@@ -304,6 +475,11 @@ p {
           top: 0;
           transform: translate(50%, -50%);
           background: url("static/img/breeding/plus.svg") no-repeat center / cover;
+
+          @media (max-width: 1200px) {
+            width: 36px;
+            height: 36px;
+          }
 
           &.minus {
             background: url("static/img/breeding/minus.svg") no-repeat center / cover;
@@ -316,6 +492,13 @@ p {
         grid-row-gap: 18px;
         padding: 20px 48px 0 48px;
 
+        @media (max-width: 1200px) {
+          font-size: 16px;
+          line-height: 130%;
+          padding: 12px 24px 0 16px;
+          grid-row-gap: 12px;
+        }
+
         ::v-deep {
           p {
             font-weight: 600;
@@ -323,6 +506,11 @@ p {
             line-height: 130%;
             color: #FEFEFE;
             margin-bottom: 0;
+
+            @media (max-width: 1200px) {
+              font-size: 16px;
+              line-height: 130%;
+            }
           }
 
           a {
@@ -343,8 +531,12 @@ p {
   &-wrapper {
     padding-top: 88px;
     background:
-      url("static/img/breeding/dna.png") repeat-y center top / cover
+      url("static/img/breeding/dna.png") repeat-y center top 450px / cover
     ;
+
+    @media (max-width: 1200px) {
+      padding-top: 24px;
+    }
   }
 
   &-about {
@@ -356,18 +548,33 @@ p {
     border-radius: 60px 0;
     margin-bottom: 68px;
 
+    @media (max-width: 1200px) {
+      margin-left: 32px;
+      padding: 24px 15px 16px;
+      border-radius: 30px 0;
+      margin-bottom: 40px;
+    }
+
     &__number-img {
       position: absolute;
       top: 0;
       left: 0;
       transform: translate(-50%, -50%);
       width: 86px;
+
+      @media (max-width: 1200px) {
+        width: 60px;
+      }
     }
 
     &-text {
       font-size: 18px;
       display: grid;
       grid-row-gap: 1em;
+
+      @media (max-width: 1200px) {
+        font-size: 18px;
+      }
 
       &__text {
         font-weight: 600;
@@ -384,6 +591,10 @@ p {
 
           img {
             width: 21px;
+
+            @media (max-width: 1200px) {
+              width: 19px;
+            }
           }
         }
       }
@@ -397,7 +608,16 @@ p {
     align-items: end;
     margin-bottom: 91px;
 
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      grid-row-gap: 24px;
+      margin-bottom: 20px;
+    }
+
     &-guide {
+      @media (max-width: 1200px) {
+        order: 1;
+      }
 
       &__title {
         font-family: 'Hammersmith One', sans-serif;
@@ -405,6 +625,12 @@ p {
         line-height: 45px;
         color: #00D2FE;
         margin-bottom: 24px;
+
+        @media (max-width: 1200px) {
+          margin-bottom: 12px;
+          font-size: 24px;
+          line-height: 30px;
+        }
       }
 
       &-text {
@@ -412,12 +638,22 @@ p {
         grid-row-gap: 1em;
         margin-bottom: 60px;
 
+        @media (max-width: 1200px) {
+          margin-bottom: 12px;
+          grid-row-gap: .8em;
+        }
+
         &__text {
           font-weight: 600;
           font-size: 18px;
           line-height: 130%;
           color: #FFFFFF;
           margin-bottom: 0;
+
+          @media (max-width: 1200px) {
+            font-size: 16px;
+            line-height: 140%;
+          }
 
 
           a {
@@ -437,6 +673,11 @@ p {
         color: #fff;
         padding: 20px;
 
+        @media (max-width: 1200px) {
+          font-size: 14px;
+          padding: 18px 16px 9px 14px;
+        }
+
         strong {
           color: #FF00FF;
         }
@@ -445,6 +686,7 @@ p {
 
     &__img {
       width: 100%;
+      max-width: 450px;
     }
   }
 
@@ -453,6 +695,11 @@ p {
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
     &__title {
       font-family: "Hammersmith One", sans-serif;
       font-size: 36px;
@@ -460,6 +707,11 @@ p {
       text-align: center;
       color: #FF00FF;
       margin-bottom: 20px;
+
+      @media (max-width: 1200px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
     }
 
     &__text {
@@ -469,6 +721,10 @@ p {
       line-height: 130%;
       text-align: center;
       color: #FEFEFE;
+
+      @media (max-width: 1200px) {
+
+      }
     }
   }
 }
@@ -476,8 +732,34 @@ p {
 .examples {
   height: 450px;
 
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
   &-wrapper {
     background: url("static/img/breeding/examples.png") no-repeat center / cover;
+  }
+
+  &-mobile {
+    &-top {
+      display: none;
+      height: 130px;
+      background: url("static/img/breeding/examples-top-mobile.png") no-repeat center / contain;
+
+      @media (max-width: 1200px) {
+        display: flex;
+      }
+    }
+
+    &-bottom {
+      display: none;
+      height: 280px;
+      background: url("static/img/breeding/examples-bottom-mobile.png") no-repeat center / contain;
+
+      @media (max-width: 1200px) {
+        display: flex;
+      }
+    }
   }
 }
 
@@ -487,8 +769,16 @@ p {
   align-items: center;
   row-gap: 4px;
 
+  @media (max-width: 1200px) {
+    row-gap: 12px;
+  }
+
   &-wrapper {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
+
+    @media (max-width: 1200px) {
+      padding-bottom: 28px;
+    }
   }
 
   &__text {
@@ -498,6 +788,10 @@ p {
     line-height: 130%;
     text-align: center;
     color: #FFFFFF;
+
+    @media (max-width: 1200px) {
+      font-size: 18px;
+    }
 
     a {
       color: #00D2FE;
@@ -524,6 +818,12 @@ p {
   opacity: 0;
   visibility: hidden;
   text-align: left;
+
+  @media (max-width: 1200px) {
+    width: 200px;
+    padding: 12px;
+    font-size: 14px;
+  }
 
   strong {
     line-height: 130%;
