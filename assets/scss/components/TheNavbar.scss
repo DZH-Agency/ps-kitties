@@ -1,7 +1,7 @@
 @import "../theme";
 
 .nbr-wrapper {
-  padding: 18px 0;
+  padding: 0 0 18px 0;
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -19,6 +19,7 @@
 }
 
 .nbr {
+  padding-top: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;

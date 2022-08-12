@@ -33,6 +33,30 @@ html, body {
   background-image: url("~static/img/nav-toggle-close.png");
 }
 
+.notification {
+  padding: 12px 36px 12px 12px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  line-height: 130%;
+  color: white;
+  background: linear-gradient(260.39deg, #00A79D 0%, #8C41CE 96.71%);
+
+  a {
+    color: #FF00FF;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  &__close {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+}
+
 .crypto-com-nft-logo {
   margin-left: 4px;
   display: inline-block;
