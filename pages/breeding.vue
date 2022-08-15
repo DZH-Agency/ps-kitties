@@ -119,13 +119,13 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               </div>
               <div class="header-terms-item">
                 <p>
-                  Breeding of Generation Q Baby NFTs are available for holders of Psycokitties NFT, PsychoMollies NFT and/or Mad Hare Society NFTs. Therefore, these Terms of Service are hereby made as part of the Terms & Conditions for PsychoKitties NFT located at
+                  Breeding of Generation Q Baby NFTs are available for holders of PsychoKitties NFT, PsychoMollies NFT and/or Mad Hare Society NFTs. Therefore, these Terms of Service are hereby made as part of the Terms & Conditions for PsychoKitties NFT located at
                   <a target="_blank" href="https://www.psychokitties.io/terms-and-conditions">https://www.psychokitties.io/terms-and-conditions</a>, and Terms & Conditions for Mad Hare Society NFT located at
                   <a target="_blank" href="https://madharesociety.com/terms-and-conditions#">https://madharesociety.com/terms-and-conditions#</a>, which are hereby incorporated by reference.
                 </p>
               </div>
               <div class="header-terms-item">
-                <p>Whereas PsychoKitties NFTs, PsychoMollies NFTs, and Mad Hare Society NFTs are sold through Crypto.com, and Generation Q Baby NFTs will also be airdropped through Crypto.com, your purchase and ownership of Generation Q Baby NFT with its Art are governed by these Terms of Service for Breeding of Generation Q Baby NFTs, Terms & Conditions for PsychoKitties NFT, Terms & Conditions for Mad Hare Society NFT, and Terms & Conditions published on the website of Cprypto.com -
+                <p>Whereas PsychoKitties NFTs, PsychoMollies NFTs, and Mad Hare Society NFTs are sold through Crypto.com, and Generation Q Baby NFTs will also be airdropped through Crypto.com, your purchase and ownership of Generation Q Baby NFT with its Art are governed by these Terms of Service for Breeding of Generation Q Baby NFTs, Terms & Conditions for PsychoKitties NFT, Terms & Conditions for Mad Hare Society NFT, and Terms & Conditions published on the website of Crypto.com -
                   <a target="_blank" href="https://crypto.com/nft/terms">https://crypto.com/nft/terms</a>, which are incorporated herein by reference. If you do not wish to abide by any of these terms, you may not purchase or breed Generation Q Baby NFT. </p>
               </div>
               <div class="header-terms-item">
@@ -163,7 +163,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                     The other 5 (five) comics are distributed to the holders depending on the amount of hidden staking points they have accumulated by holding their PsychoKitty NFTs, and Mad Hare Society NFTs as follows:
                     <br>
                     <br>
-                    -	from 250 points - Edition 2;
+                    -	upto 250 points - Edition 2;
                     <br>
                     - from 251 to 500 points - Edition 2 and Edition 3;
                     <br>
@@ -180,7 +180,8 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               </div>
               <div class="header-terms-item">
                 <h4>BREEDING</h4>
-                <p>Once you have purchased your Love Potions, Breeding of Generation Q Baby NFT will be available at https://breeding.psychokitties.io. If this website requires password, then our breeding section has not been opened up yet. You can see up-to-date information in our Discord or Twitter.</p>
+                <p>Once you have purchased your Love Potions, Breeding of Generation Q Baby NFT will be available at <a
+                  href="https://breeding.psychokitties.io" target="_blank">https://breeding.psychokitties.io</a>. If this website requires password, then our breeding section has not been opened up yet. You can see up-to-date information in our Discord or Twitter.</p>
                 <p>Breeding will be possible by verifying your wallet according to instructions, selecting your parent PsychoKitty NFTs and Love Potion, choosing your breeding style, revealing your Generation Q Baby, rinsing and repeating.</p>
                 <p>If you screen-record your Breeding process and tag @PsychoKittiesOG & @MadHareSociety on Twitter, you will be grated with a chance to win a custom Generation Q Baby NFT where you decide the traits of its character.</p>
               </div>
@@ -193,6 +194,10 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 <p>Please note that we, Genius Arts LLC and Ugonzo Arts LLC, are able to control only the process of sending NFTs to Crypto.com which may be done approximately within a week after breeding season ends. Therefore, Crypto.com is solely responsibility to drop Generation Q Baby NFTs and/or Comic Strips within 3 (three) weeks after Crypto.com has received the NFTs we send to Crypto.com.</p>
                 <p>Crypto.com accepts no responsibility in respect of the operation of Breeding of Generation Q Baby NFTs, which shall be the sole responsibility of Genius Arts LLC and Ugonzo Arts LLC. Crypto.com incurs no liability in relation to the foregoing terms and condition. Participation in the Breeding of Generation Q Baby NFTs is optional.</p>
                 <p>Crypto.com, Genius Arts LLC and Ugonzo Arts LLC make no guarantee, representation, or warranty in respect of the distribution or quality of the Generation Q Baby NFTs and Comic Strips.</p>
+              </div>
+              <div class="header-terms-item">
+                <h4>OWNERSHIP OF COMIC STRIP</h4>
+                <p>You are entitled to sell your copy of Comic Strip without claiming royalties thereof or commission from any consecutive sale of the Comic Strip. Notwithstanding anything contrary, you are not entitled to monetize or otherwise commercialize any of your Comic Strip. We retain all intellectual property rights and any other rights necessary to exploit any Comic Strip in any commercial and non-commercial way and build new partnerships and collaborations with regard to any Comic Strip. Unless we permit otherwise in writing, you are not entitled to any royalties or any other proceedings coming from such commercialization, partnerships, and collaborations. You hereby irrevocably waive the right to make any claim against us or any third party authorized by us to exploit Comic Strip based on activities, partnerships and collaborations permitted or directly executed by us.</p>
                 <p>If you have any questions, you can join our Discord channels at: <a href="https://www.discord.gg/psychokitties">www.discord.gg/psychokitties</a>.</p>
                 <p>You can see up-to-date breeding news at <a href="https://www.twitter.com/psychokittiesog">www.twitter.com/psychokittiesog</a>.</p>
               </div>

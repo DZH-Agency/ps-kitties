@@ -106,11 +106,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 12px;
+    column-gap: 64px;
     margin-bottom: 48px;
 
     @media (max-width: 1200px) {
       margin-bottom: 24px;
+      column-gap: 12px;
     }
 
     @media (max-width: 700px) {
@@ -270,10 +271,10 @@ p {
         background: #390968;
         backdrop-filter: blur(20px);
         border-radius: 25px 0;
+        flex-grow: 1;
 
         @media (max-width: 1200px) {
           padding: 12px 4px 4px;
-          flex-grow: 1;
 
           &:last-child {
             flex-grow: 0;
