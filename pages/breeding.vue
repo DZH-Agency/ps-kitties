@@ -8,7 +8,7 @@
               <img src="/img/breeding/logo.svg" alt="" class="ps-navbar-brand__img">
             </nuxt-link>
             <a href="https://breeding.psychokitties.io" target="_blank" class="ps-navbar__enter-link">
-              Enter breeding site <br class="mobile-only"> (not live)
+              LIVE in parenthesis
             </a>
           </div>
         </div>
