@@ -402,8 +402,26 @@ export default {
       question: 'When and where will I receive my baby? ',
       answer: `
         <p>
-        We'll send the baby and comic assets to CDC within a week after the breeding season has ended and you can expect the NFTs to be airdropped into your <a href="https://crypto.com/nft/" target="_blank">Crypto.com/NFT</a> account within 3 weeks after CDC has received the items.
+        We'll send the baby and comic assets to CDC within a week after the breeding season has ended, and you can expect the NFTs to be airdropped into your <a href="https://crypto.com/nft/" target="_blank">Crypto.com/NFT</a> account within 3 weeks after CDC has received the items.
 </p>
+      `
+    },
+    {
+      question: 'Where do my NFTs need to be stored to be able to breed?',
+      answer: `
+        <p>Just leave them in your CDC wallet. We can't detect NFTs that have been sent out of CDC platform.</p>
+      `
+    },
+    {
+      question: 'How do you know what NFTs are in my wallet?',
+      answer: `
+        <p>Since you've linked your Twitter (doesn't need to be your official Twitter account) with your CDC profile, our program can verify that CDC account belongs to you and read public information on your CDC page, store them into a database and showcase it to you in a pleasant manner in our breeding section UI.</p>
+      `
+    },
+    {
+      question: 'Why are you releasing 50,000 love potions if there can only be 10,000 babies?',
+      answer: `
+        <p>To prevent whales or market manipulators from buying up the whole supply and selling it to you on secondary at 2-5x prices, we have set the potion amount to 50,000 units so every person who wants to breed will be guaranteed to get an unused love potion from this drop.</p>
       `
     },
   ],
