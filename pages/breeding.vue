@@ -375,7 +375,7 @@ export default {
     {
       question: 'Have people breeded with my NFTs?',
       answer: `
-        <p>You will have access to a global search website within the breeding site to make sure that the NFTs you plan to buy haven't been used by another person. To be safe, we suggest buying love potions directly from the CDC drop and not from the secondary market.</p>
+        <p><a target="_blank" href="https://breeding.psychokitties.io/unusedNFTs.html">https://breeding.psychokitties.io/unusedNFTs.html</a> to make sure that the NFTs you plan to buy haven't been used by another person. To be safe, we suggest buying love potions directly from the CDC drop and not from the secondary market.</p>
       `
     },
     {
