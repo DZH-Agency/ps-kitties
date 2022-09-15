@@ -28,6 +28,7 @@
     </div>
     <the-artist id="artist"/>
     <the-team id="team"/>
+    <gaming-section id="gaming" />
     <join-community/>
     <ranking-table id="ranking"/>
     <the-footer/>
