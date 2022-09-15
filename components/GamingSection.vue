@@ -2,7 +2,7 @@
   <div class="gs-wrapper">
     <div class="ps-container">
       <div class="gs">
-        <h2 class="gs__title">Gaming section </h2>
+        <h2 class="gs__title">Gaming Team</h2>
         <p class="gs__text">We've been building and growing so fast recently, it's time we update you on the incredible people we've onboarded!</p>
         
         <div class="gs-list">
