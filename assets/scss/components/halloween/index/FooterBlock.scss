@@ -1,0 +1,62 @@
+.footer {
+
+  &-wrapper {
+    padding-bottom: 60px;
+    background:
+            url("static/img/halloween/index/footer/web-top-left.svg") no-repeat top left,
+            url("static/img/halloween/index/footer/web-bottom-right.svg") no-repeat bottom right;
+  }
+
+  &__text {
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    a {
+      color: #00D2FE;
+    }
+  }
+}
+
+.when {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 45px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: 'Hammersmith One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF00FF;
+  }
+
+  &__text {
+    max-width: 622px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #FEFEFE;
+  }
+}
+
+.images {
+  width: 100%;
+  margin-bottom: 50px;
+}

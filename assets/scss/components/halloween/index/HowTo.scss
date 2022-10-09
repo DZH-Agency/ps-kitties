@@ -1,0 +1,139 @@
+.how {
+
+  &-wrapper {
+    padding-bottom: 86px;
+  }
+
+  &__title {
+
+  }
+
+  &-guide {
+    display: grid;
+    grid-template-columns: 584px 1fr;
+    column-gap: 50px;
+    margin-bottom: 64px;
+
+    &__video {
+
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      row-gap: 12px;
+      font-family: 'Hammersmith One', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 45px;
+      color: #FFFFFF;
+
+      &-hint {
+
+      }
+    }
+  }
+
+  &-info {
+    display: grid;
+    grid-template-columns: 584px 1fr;
+    column-gap: 50px;
+
+    &-left {
+
+    }
+
+    &-description {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 130%;
+      color: #FFFFFF;
+      margin-bottom: 43px;
+
+      a {
+        color: #FF00FF;
+      }
+
+      &-twitter-hint {
+        color: #00D2FE;
+        cursor: help;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 4px;
+        position: relative;
+
+        &::after {
+          content: "?";
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          background: #00D2FE;
+          color: #0D0E10;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &:hover {
+          .how-info-description-twitter-hint__popup {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
+        &__popup {
+          z-index: 10;
+          position: absolute;
+          left: 0;
+          bottom: calc(100% + 8px);
+          width: 383px;
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity .3s, visibility .3s;
+          background: #390968;
+          backdrop-filter: blur(10px);
+          border-radius: 25px 0;
+          border: 2px solid #AF31AA;
+          padding: 16px 20px;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 130%;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &__hint {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 130%;
+      padding: 20px 18px;
+      background: #390968;
+      backdrop-filter: blur(10px);
+      border-radius: 25px 0;
+      border: 2px solid #AF31AA;
+      max-width: 530px;
+
+      span {
+        color: #FF00FF;
+        line-height: 130%;
+      }
+    }
+
+    &-preview {
+      position: relative;
+
+      &__img {
+        max-width: 100%;
+      }
+
+      &__pumpkin {
+        position: absolute;
+        right: -100px;
+        bottom: -74px;
+      }
+    }
+  }
+}

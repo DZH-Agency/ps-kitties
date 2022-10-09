@@ -1,0 +1,101 @@
+@import "../../../theme";
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+
+  &-wrapper {
+    min-height: 100vh;
+    flex: 1;
+    background:
+            url("static/img/halloween/index/hero/hero-characters.png") no-repeat bottom,
+            url("static/img/halloween/index/hero/hero-bg.png") no-repeat center / cover;
+  }
+
+  &__heading {
+    font-family: 'Creepster', sans-serif;
+    margin-bottom: 20px;
+    font-size: 52px;
+    line-height: 61px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    .orange {
+      background: linear-gradient(0deg, #F39200 -0.52%, #F18804 14.99%, #EB5E15 83.88%, #E94E1B 119.27%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-family: 'Creepster', sans-serif;
+      line-height: inherit;
+    }
+
+    .pink {
+      background: linear-gradient(352.73deg, #D60B52 2.43%, #F02378 46.6%, #FB2D88 71.31%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-family: 'Creepster', sans-serif;
+      line-height: inherit;
+    }
+  }
+
+  &-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    margin-bottom: 24px;
+
+    &__img {
+
+    }
+  }
+
+  &-exclusive {
+    background: rgba(57, 9, 104, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 60px 0;
+    padding: 24px 40px;
+    max-width: 790px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #7B9CD3;
+
+    &__title {
+      font-weight: 600;
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+
+      strong {
+        background: linear-gradient(262.72deg, #1CE7D3 0%, #FF00F8 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+
+    &__date {
+      background: linear-gradient(262.72deg, #1CE7D3 0%, #FF00F8 100%);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      padding: 4px 16px;
+      margin-bottom: 12px;
+    }
+
+    &__only-on {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

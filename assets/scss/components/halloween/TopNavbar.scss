@@ -1,0 +1,217 @@
+@import "../../theme";
+
+.nbr-wrapper {
+  padding: 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all .3s;
+  background: rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(10px);
+
+  @media (max-width: 1200px) {
+    &.opened {
+      background-color: rgba(9, 11, 33, 0.7);
+      backdrop-filter: blur(15px);
+    }
+  }
+}
+
+.nbr {
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    padding: 9px 0;
+  }
+
+  &__logo {
+    width: 75px;
+
+    @media (max-width: 1200px) {
+      width: 65px;
+    }
+  }
+
+  &-menu {
+    &-desktop {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+
+      &__enter-link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration-line: underline;
+
+        color: #FF00FF;
+      }
+
+      &__item {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 0;
+          transition: width .3s;
+          height: 2px;
+          background-color: #00D2FE;
+        }
+
+        &.nuxt-link-exact-active {
+          color: #00D2FE;
+
+          &::after {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  &__burger {
+    display: grid;
+    grid-row-gap: 6px;
+    justify-items: end;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+
+      .not-live {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: right;
+        text-decoration-line: underline;
+        color: #FF00FF;
+        margin-right: 32px;
+      }
+    }
+
+    div {
+      transition: all .3s;
+      height: 2px;
+      width: 24px;
+      border-radius: 10px;
+      background: $blue;
+
+      &:last-child {
+        width: 18px;
+      }
+    }
+
+    &.opened {
+      div {
+        width: 34px;
+
+        &:first-child {
+          transform: rotate(45deg) translateX(6px);
+        }
+
+        &:nth-child(2) {
+          transform: rotate(-45deg) translateX(6px);
+        }
+
+        &:last-child {
+          width: 0;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &-mobile {
+    overflow-y: auto;
+    padding-top: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+
+    @media (max-height: 780px) {
+      padding-top: 0;
+    }
+
+    &-container {
+      background: rgba(9, 11, 33, 0.7);
+      backdrop-filter: blur(15px);
+      z-index: 10;
+      overflow: hidden;
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      transition: transform .3s;
+      transform: translateY(300%);
+
+      &.opened {
+        transform: translateY(83px);
+      }
+    }
+
+    &-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        width: 100%;
+        padding: 16px 0;
+        font-size: 28px;
+        line-height: 130%;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+
+        @media (max-height: 740px) {
+          padding: 12px 0;
+          font-size: 24px;
+          line-height: 130%;
+        }
+
+        @media (max-height: 625px) {
+          padding: 6px 0;
+          font-size: 22px;
+          line-height: 130%;
+        }
+
+        &:hover {
+          color: $blue;
+          border-top-color: $blue;
+          border-bottom-color: $blue;
+        }
+      }
+    }
+
+    &-social {
+      padding-bottom: 28px;
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 32px);
+      grid-column-gap: 16px;
+      justify-content: center;
+    }
+  }
+}

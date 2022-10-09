@@ -8,6 +8,14 @@ html {
   }
 }
 
+.first-block-wrapper {
+  padding-top: 103px;
+
+  @media (max-width: 1200px) {
+    padding-top: 83px;
+  }
+}
+
 .ps-container {
   max-width: 1248px;
   padding: 0 24px;
@@ -23,6 +31,22 @@ html {
 html, body {
   background-color: #0D0E10;
   overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Creepster', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #E4E4E4;
+
+  @media (max-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .collapsed .navbar-toggler-icon {
