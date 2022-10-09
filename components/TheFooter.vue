@@ -17,7 +17,11 @@
 <!--              Discord Verification-->
 <!--            </nuxt-link>-->
           </div>
-          <nuxt-link to="/terms-and-conditions" class="mobile-only ft-social__terms">PK/PM Terms & Conditions</nuxt-link>
+          <div class="ft-social__terms-box">
+            <nuxt-link to="/terms-and-conditions" class="mobile-only ft-social__terms">PK/PM Terms & Conditions</nuxt-link>
+            <nuxt-link to="/halloween-terms-and-conditions" class="mobile-only ft-social__terms">Halloween Bash Terms & Conditions</nuxt-link>
+          </div>
+          
           <div class="ft-social mobile-only">
             <a class="ft-social__item" :href="social.href" target="_blank" v-for="social in $options.socialItems">
               <img :src="social.img" alt="social icon">
@@ -36,6 +40,7 @@
           </div>
           <div class="privacy-social desktop-only">
             <nuxt-link to="/terms-and-conditions" class="privacy-social__terms">PK/PM Terms & Conditions</nuxt-link>
+            <nuxt-link to="/halloween-terms-and-conditions" class="privacy-social__terms">Halloween Bash Terms & Conditions</nuxt-link>
             <a class="privacy-social__item" :href="social.href" target="_blank" v-for="social in $options.socialItems">
               <img :src="social.img" alt="social icon">
             </a>
