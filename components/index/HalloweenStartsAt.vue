@@ -91,6 +91,7 @@ export default {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   
   &-wrapper {
     padding: 66px 0;
