@@ -60,7 +60,7 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
       Once you've purchased your Halloween Coffins, head over to: <a href="https://halloween.psychokitties.io" target="_blank">https://halloween.psychokitties.io</a> - simple animations will guide you through the process to login and create your monster. If you face any difficulties, chat with us on Discord at <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a>.`
     },
     {
-      question: 'When and where will I receive my baby?',
+      question: 'When and where will I receive my Halloween monster?',
       answer: `We'll send the Halloween Monsters to CDC within a week after the Halloween Bash event has ended to have time to fix any trait error that may have occurred. You can expect the NFTs to be airdropped into your <a href="https://Crypto.com/nft" target="_blank">Crypto.com/nft</a> account within 3 weeks after CDC has received the assets.`
     },
     {

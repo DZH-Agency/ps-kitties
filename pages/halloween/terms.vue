@@ -17,7 +17,7 @@
           </p>
           <p class="terms__text">
             These Additional Terms and Conditions are hereby made as part of the Terms &amp;
-            Conditions for Halloween Bash NFT(s) located at <nuxt-link to="/halloween-terms-and-conditions">https://psychokitties.io/halloween-terms-and-conditions</nuxt-link>, which are hereby incorporated by reference.
+            Conditions for Halloween Bash NFT(s) located at <a target="_blank" href="https://psychokitties.io/halloween-terms-and-conditions">https://psychokitties.io/halloween-terms-and-conditions</a>, which are hereby incorporated by reference.
           </p>
           <p class="terms__text">
             Halloween Bash NFT(s) will be airdropped through Crypto.com. Therefore, your

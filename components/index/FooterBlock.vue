@@ -25,10 +25,6 @@
         </p>
       </div>
     </div>
-    
-    <nuxt-link to="/halloween/terms" class="terms">
-      Halloween Bash Terms & Conditions
-    </nuxt-link>
   </div>
 </template>
 
