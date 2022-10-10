@@ -33,7 +33,7 @@ export default {
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.06em;
-  text-decoration-line: underline;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
