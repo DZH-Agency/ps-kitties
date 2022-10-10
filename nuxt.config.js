@@ -44,7 +44,7 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Exo:400,500,600,700'
+        href: 'https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700,900'
       },
       {
         rel: 'stylesheet',
@@ -53,6 +53,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Creepster&display=swap'
       }
     ],
     script: [

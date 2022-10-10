@@ -16,6 +16,12 @@ html {
   }
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .ps-container {
   max-width: 1248px;
   padding: 0 24px;
@@ -33,7 +39,7 @@ html, body {
   overflow-x: hidden;
 }
 
-h1 {
+.creepster-heading {
   font-family: 'Creepster', sans-serif;
   font-style: normal;
   font-weight: 400;

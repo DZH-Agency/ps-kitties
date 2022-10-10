@@ -1,8 +1,8 @@
 <template>
   <div class="hero-wrapper first-block-wrapper">
-    <div class="container">
+    <div class="ps-container">
       <div class="hero">
-        <h1 class="hero__heading">
+        <h1 class="creepster-heading hero__heading">
           Welcome To <strong class="orange">Halloween</strong> <b class="pink">Bash</b>
         </h1>
         <div class="hero-logos">

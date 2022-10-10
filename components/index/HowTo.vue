@@ -1,6 +1,6 @@
 <template>
   <div class="how-wrapper">
-    <div class="container">
+    <div class="ps-container">
       <div class="how">
         <h2 class="how__title"></h2>
         <div class="how-guide">

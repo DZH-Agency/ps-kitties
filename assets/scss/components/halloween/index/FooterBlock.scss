@@ -1,7 +1,7 @@
 .footer {
+  margin-bottom: 45px;
 
   &-wrapper {
-    padding-bottom: 60px;
     background:
             url("static/img/halloween/index/footer/web-top-left.svg") no-repeat top left,
             url("static/img/halloween/index/footer/web-bottom-right.svg") no-repeat bottom right;
@@ -59,4 +59,19 @@
 .images {
   width: 100%;
   margin-bottom: 50px;
+}
+
+.terms {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 0;
+  background: #1C1C1E;
 }

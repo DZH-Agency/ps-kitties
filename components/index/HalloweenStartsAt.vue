@@ -1,6 +1,6 @@
 <template>
   <div class="starts-wrapper">
-    <div class="container">
+    <div class="ps-container">
       <div class="starts">
         <h2 class="starts__title">
           Halloween Bash starts in

@@ -1,6 +1,6 @@
 <template>
   <div class="footer-wrapper">
-    <div class="container">
+    <div class="ps-container">
       <div class="when">
         <h2 class="when__title">WHEN WILL I RECEIVE MY MONSTERS?</h2>
         <p class="when__text">
@@ -13,7 +13,7 @@
       <img class="images" src="/img/halloween/index/footer/images.png" alt="" />
     </picture>
     
-    <div class="container">
+    <div class="ps-container">
       <div class="footer">
         <p class="footer__text">
           Have questions? We have a dedicated channel for Halloween Bash: <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a>
@@ -23,11 +23,12 @@
           <br>
           <a href="https://www.twitter.com/psychokittiesog">www.twitter.com/psychokittiesog</a>
         </p>
-        <p class="footer__text">
-          <nuxt-link to="/">Halloween Bash Terms & Conditions</nuxt-link>
-        </p>
       </div>
     </div>
+    
+    <nuxt-link to="/halloween/terms" class="terms">
+      Halloween Bash Terms & Conditions
+    </nuxt-link>
   </div>
 </template>
 

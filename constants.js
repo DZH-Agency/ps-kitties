@@ -10,7 +10,7 @@ export default {
   ],
   HALLOWEEN_NAVBAR_MENU_ITEMS: [
     { title: 'Overview', href: '/halloween' },
-    { title: 'Terms of Service', href: '/halloween/terms-and-conditions' },
+    { title: 'Terms of Service', href: '/halloween/terms' },
     { title: 'FAQ', href: '/halloween/faq' },
   ]
 }

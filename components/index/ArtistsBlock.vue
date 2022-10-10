@@ -1,6 +1,6 @@
 <template>
   <div class="artists-wrapper">
-    <div class="container">
+    <div class="ps-container">
       <div class="artists">
         <h2 class="artists__title">
           Brought to you by industry-leading NFT artists
