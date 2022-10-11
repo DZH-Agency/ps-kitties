@@ -116,6 +116,15 @@ export default {
       url("/img/halloween/terms/web-bottom-right.svg") no-repeat bottom right,
       url("/img/halloween/terms/pumpkins.svg") no-repeat left 20px bottom 20px,
       url("/img/halloween/terms/web-top-left.svg") no-repeat left top 80px;
+    
+    @media (max-width: 1200px) {
+      margin-top: 16px;
+      padding-bottom: 166px;
+      background:
+        url("/img/halloween/terms/characters.png") no-repeat bottom / contain,
+        url("/img/halloween/terms/spider-mobile.svg") no-repeat top 40px right,
+        url("/img/halloween/terms/web-top-left-mobile.svg") no-repeat left top 80px;
+    }
   }
   
   &__text {
@@ -144,6 +153,15 @@ export default {
   
   &__title {
     margin-bottom: 40px;
+    
+    @media (max-width: 1200px) {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+    }
   }
   
   &__subtitle {
@@ -152,6 +170,10 @@ export default {
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 12px;
+  
+    @media (max-width: 1200px) {
+      font-size: 24px;
+    }
   }
 }
 </style>

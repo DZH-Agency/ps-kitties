@@ -40,5 +40,9 @@ export default {
   justify-content: center;
   padding: 28px 0;
   background: #1C1C1E;
+  
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
 }
 </style>

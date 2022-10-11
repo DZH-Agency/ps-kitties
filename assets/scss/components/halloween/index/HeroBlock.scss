@@ -6,12 +6,24 @@
   align-items: center;
   padding-top: 48px;
 
+  @media (max-width: 1200px) {
+    padding-top: 16px;
+  }
+
   &-wrapper {
     min-height: 100vh;
     flex: 1;
+    padding-bottom: 200px;
     background:
             url("static/img/halloween/index/hero/hero-characters.png") no-repeat bottom,
             url("static/img/halloween/index/hero/hero-bg.png") no-repeat center / cover;
+
+    @media (max-width: 1200px) {
+      padding-bottom: 98px;
+      background:
+              url("static/img/halloween/index/hero/hero-characters.png") no-repeat bottom / contain,
+              url("static/img/halloween/index/hero/hero-bg-mobile.svg") no-repeat left / cover;
+    }
   }
 
   &__heading {
@@ -21,6 +33,13 @@
     line-height: 61px;
     text-align: center;
     letter-spacing: 0.06em;
+
+    @media (max-width: 1200px) {
+      font-size: 36px;
+      line-height: 42px;
+      max-width: 320px;
+      margin-bottom: 16px;
+    }
 
     .orange {
       background: linear-gradient(0deg, #F39200 -0.52%, #F18804 14.99%, #EB5E15 83.88%, #E94E1B 119.27%);
@@ -42,9 +61,15 @@
   &-logos {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 24px;
     margin-bottom: 24px;
+
+    @media (max-width: 1200px) {
+      gap: 9px 21px;
+      margin-bottom: 16px;
+    }
 
     &__img {
 
@@ -63,12 +88,23 @@
     align-items: center;
     border: 5px solid #7B9CD3;
 
+    @media (max-width: 1200px) {
+      padding: 12px 32px;
+      border-width: 3px;
+      max-width: 500px;
+    }
+
     &__title {
       font-weight: 600;
       font-size: 26px;
       text-align: center;
       letter-spacing: 0.06em;
       margin-bottom: 12px;
+
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
 
       strong {
         background: linear-gradient(262.72deg, #1CE7D3 0%, #FF00F8 100%);
@@ -87,6 +123,12 @@
       letter-spacing: 0.06em;
       padding: 4px 16px;
       margin-bottom: 12px;
+
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 500px;
+      }
     }
 
     &__only-on {
@@ -96,6 +138,10 @@
       text-align: center;
       display: flex;
       align-items: center;
+
+      @media (max-width: 1200px) {
+
+      }
     }
   }
 }

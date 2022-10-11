@@ -93,9 +93,20 @@ export default {
   align-items: center;
   justify-content: center;
   
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    padding: 10px 24px 22px;
+    border-radius: 30px 0;
+    max-width: 400px;
+  }
+  
   &-wrapper {
     padding: 66px 0;
     background: linear-gradient(262.72deg, #1CE7D3 0%, #FF00F8 100%);
+  
+    @media (max-width: 1200px) {
+      padding: 16px 0;
+    }
     
     .container {
       display: flex;
@@ -111,12 +122,24 @@ export default {
     letter-spacing: 0.06em;
     color: #FFFFFF;
     margin-right: 20px;
+  
+    @media (max-width: 1200px) {
+      font-size: 22px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
   
   &-time {
     display: flex;
     align-items: center;
     column-gap: 15px;
+  
+    @media (max-width: 1200px) {
+      column-gap: 0;
+      justify-content: space-between;
+      width: 100%;
+    }
     
     &-item {
       background: linear-gradient(0deg, #F39200 -0.52%, #F18804 14.99%, #EB5E15 83.88%, #E94E1B 119.27%);
@@ -127,6 +150,13 @@ export default {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+  
+      @media (max-width: 1200px) {
+        width: 60px;
+        height: 42px;
+        background: rgba(0, 0, 0, 0.36);
+        border-radius: 4px;
+      }
       
       &__count {
         font-family: 'Creepster', sans-serif;
@@ -137,6 +167,11 @@ export default {
         text-align: center;
         color: #FFFFFF;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.36);
+  
+        @media (max-width: 1200px) {
+          font-size: 21px;
+          line-height: 25px;
+        }
       }
       
       &__title {
@@ -147,11 +182,27 @@ export default {
         color: #FFFFFF;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.36);
         text-transform: uppercase;
+  
+        @media (max-width: 1200px) {
+          font-size: 11px;
+          line-height: 15px;
+        }
       }
     }
     
     &__semicolon {
-    
+      
+      &::after {
+        content: ':';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 110%;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.36);
+      }
     }
   }
 }

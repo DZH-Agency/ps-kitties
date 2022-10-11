@@ -9,7 +9,7 @@
       </div>
     </div>
     <picture>
-      <source srcset="/img/halloween/index/footer/images-mobile.png" media="(max-width: 1200px)" />
+      <source srcset="/img/halloween/index/footer/images-mobile.png" media="(max-width: 400px)" />
       <img class="images" src="/img/halloween/index/footer/images.png" alt="" />
     </picture>
     

@@ -102,6 +102,7 @@
         text-decoration-line: underline;
         color: #FF00FF;
         margin-right: 32px;
+        text-transform: uppercase;
       }
     }
 
@@ -164,7 +165,7 @@
       transform: translateY(300%);
 
       &.opened {
-        transform: translateY(83px);
+        transform: translateY(80px);
       }
     }
 
@@ -172,6 +173,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex: 1;
+      justify-content: center;
+      row-gap: 24px;
 
       &__item {
         display: flex;

@@ -2,7 +2,7 @@
   <div class="how-wrapper">
     <div class="ps-container">
       <div class="how">
-        <h2 class="how__title"></h2>
+        <h2 class="how__title">How to create a monster?</h2>
         <div class="how-guide">
           <embed src="/img/halloween/index/how/how-to-video.svg" type="image/svg+xml" class="how-guide__video">
           
@@ -36,10 +36,13 @@
               <br>
               <br>
               - create your monster
+              <br>
+              <br>
               - rinse and repeat
             </p>
   
             <div class="how-info__hint">
+              <img src="/img/halloween/index/how/spider-mobile-hint.svg" class="mobile-only how-info__hint-spider" alt="">
               <span class="pink">NOTE:</span> NEVER buy a Halloween Coffin on secondary marketplace because they are mostly used. Halloween Bash is open for 7 days, so everybody will have time to create their monsters!
             </div>
           </div>

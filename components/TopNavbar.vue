@@ -4,7 +4,7 @@
 <!--          BREEDING STARTS ON 19TH OF AUGUST. FOR MORE INFO <nuxt-link to="/breeding">CLICK HERE</nuxt-link>-->
 <!--          <button class="notification__close" @click="displayNotification = false">&times;</button>-->
 <!--        </div>-->
-    <div class="container">
+    <div class="ps-container">
       <div class="nbr">
         <img src="/img/halloween/logo.png" alt="logo" class="nbr__logo">
         <div class="nbr-menu-desktop desktop-only">
@@ -25,7 +25,7 @@
         </div>
         <div class="nbr__burger-wrapper mobile-only">
           <a class="not-live" href="https://halloween.psychokitties.io" target="_blank">
-            Enter halloween bash <br> not live
+            Enter halloween bash <br> (not live)
           </a>
           <div class="nbr__burger" :class="{opened: isOpened}" @click="isOpened = !isOpened">
             <div />

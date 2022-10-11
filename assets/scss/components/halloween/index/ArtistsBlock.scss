@@ -3,6 +3,11 @@
   &-wrapper {
     padding: 66px 0 100px;
     background: url("static/img/halloween/index/artists/spiders.png") no-repeat right 78px top;
+
+    @media (max-width: 1200px) {
+      padding: 20px 0 27px;
+      background: none;
+    }
   }
 
   &__title {
@@ -16,6 +21,12 @@
     text-transform: uppercase;
     color: #FF00FF;
     margin: 0 auto 32px auto;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 28px;
+    }
   }
 
   &-list {
@@ -23,26 +34,47 @@
     flex-direction: column;
     row-gap: 80px;
 
+    @media (max-width: 1200px) {
+      row-gap: 22px;
+    }
+
     &-item {
       display: flex;
       column-gap: 45px;
+
+      @media (max-width: 1200px) {
+        row-gap: 36px;
+        flex-direction: column;
+      }
 
       &:nth-child(2n) {
         .artists-list-item {
 
           &-info {
             order: 1;
+
+            @media (max-width: 1200px) {
+
+            }
           }
 
           &-card {
 
             &-info {
               order: 1;
+
+              @media (max-width: 1200px) {
+
+              }
             }
 
             &__pumpkin {
               right: unset;
               left: -38px;
+
+              @media (max-width: 1200px) {
+                left: -31px;
+              }
             }
           }
         }
@@ -53,11 +85,19 @@
         display: flex;
         flex-direction: column;
 
+        @media (max-width: 1200px) {
+          order: 1;
+        }
+
         &-social {
           display: flex;
           align-items: center;
           column-gap: 15px;
           margin-bottom: 16px;
+
+          @media (max-width: 1200px) {
+
+          }
 
           &-link {
 
@@ -72,6 +112,11 @@
           font-size: 18px;
           line-height: 130%;
           margin-bottom: 24px;
+
+          @media (max-width: 1200px) {
+            font-size: 14px;
+            margin-bottom: 12px;
+          }
         }
 
         &__read-more {
@@ -85,6 +130,10 @@
           column-gap: 12px;
           margin-top: auto;
           align-self: flex-start;
+
+          @media (max-width: 1200px) {
+            font-size: 18px;
+          }
         }
       }
 
@@ -100,6 +149,16 @@
         column-gap: 28px;
         position: relative;
 
+        @media (max-width: 1200px) {
+          flex-basis: 173px;
+          width: 100%;
+          padding: 16px 20px;
+          border-radius: 30px 0;
+          height: 173px;
+          max-width: 450px;
+          margin: 0 auto;
+        }
+
         &-info {
           display: flex;
           flex: 1;
@@ -111,8 +170,13 @@
             align-items: center;
             justify-content: center;
 
+            @media (max-width: 1200px) {
+
+            }
+
             img {
               max-width: 100%;
+              max-height: 77px;
             }
           }
 
@@ -126,17 +190,32 @@
             background: linear-gradient(262.72deg, #1CE7D3 0%, #FF00F8 100%);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 8px;
+
+            @media (max-width: 1200px) {
+              font-size: 18px;
+
+            }
           }
         }
 
         &__img {
           flex: 0 1 204px;
+
+          @media (max-width: 1200px) {
+            flex-basis: 140px;
+          }
         }
 
         &__pumpkin {
           position: absolute;
           bottom: -30px;
           right: -38px;
+
+          @media (max-width: 1200px) {
+            width: 73px;
+            right: -26px;
+            bottom: -21px;
+          }
         }
       }
     }

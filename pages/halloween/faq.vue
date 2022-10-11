@@ -88,17 +88,43 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
       url("/img/halloween/terms/web-bottom-right.svg") no-repeat bottom right,
       url("/img/halloween/terms/pumpkins.svg") no-repeat left 20px bottom 20px,
       url("/img/halloween/terms/web-top-left.svg") no-repeat left top 80px;
+  
+    @media (max-width: 1200px) {
+      margin-top: 16px;
+      padding-bottom: 166px;
+      background:
+        url("/img/halloween/terms/characters.png") no-repeat bottom / contain,
+        url("/img/halloween/terms/spider-mobile.svg") no-repeat top 40px right,
+        url("/img/halloween/terms/web-top-left-mobile.svg") no-repeat left top 80px;
+    }
   }
   
   &__title {
     margin-bottom: 24px;
+  
+    @media (max-width: 1200px) {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      margin-bottom: 40px;
+    }
   }
   
   &-list {
     display: grid;
+    grid-template-columns: 1fr;
     row-gap: 40px;
     
+    @media (max-width: 1200px) {
+      padding-right: 20px;
+      row-gap: 24px;
+    }
+    
     &-item {
+      width: 100%;
+      max-width: 100%;
       
       &-question {
         background: rgba(57, 9, 104, 0.6);
@@ -113,12 +139,25 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
         padding: 20px 54px;
         border: 3px solid #7B9CD3;
         position: relative;
+  
+        @media (max-width: 1200px) {
+          font-size: 18px;
+          line-height: 22px;
+          padding: 12px 20px;
+        }
         
         &__toggler {
           position: absolute;
           top: -32px;
           right: -28px;
           cursor: pointer;
+  
+          @media (max-width: 1200px) {
+            width: 36px;
+            height: 36px;
+            right: -18px;
+            top: -18px;
+          }
         }
       }
       
@@ -127,6 +166,11 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
         font-weight: 600;
         font-size: 18px;
         line-height: 130%;
+  
+        @media (max-width: 1200px) {
+          padding: 12px 20px 0;
+          font-size: 16px;
+        }
         
         a {
           color: #00D2FE;
