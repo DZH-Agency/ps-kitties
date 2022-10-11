@@ -16,7 +16,7 @@
                 <a :href="proj.socials.instagram" target="_blank" class="artists-list-item-info-social-link"><img src="/img/halloween/index/artists/instagram.svg" alt="" class="artists-list-item-info-social-link__icon" /></a>
               </header>
               <p class="artists-list-item-info__description">
-                <span v-html="proj.descriptionHeading"></span>
+                <span v-html="proj.descriptionHeading"></span>{{ openedProjectIdx === idx ? '' : '...' }}
                 <br>
                 <br>
                 
