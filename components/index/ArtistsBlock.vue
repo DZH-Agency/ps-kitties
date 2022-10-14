@@ -206,7 +206,7 @@ WoahJonny also drew inspiration from his idea that there’s a Lil De Man lurkin
 What does your Lil De Man look like? Is he a cute and playful trouble-maker that only surfaces when you get too drunk at the work Christmas party, or is your Lil De Man something a little more sinister…?
 <br>
 <br>
-Whatever your Lil De Man is, with xxx custom traits to choose from, we are sure you will be able to find one who speaks to your inner dark-side, whatever level it may be…
+Whatever your Lil De Man is, with over 120 traits to choose from, we are sure you will be able to find one who speaks to your inner dark-side, whatever level it may be…
       `,
       cardImg: require('@/static/img/halloween/index/artists/ape/card-image.png'),
       cardTag: 'Demon',
