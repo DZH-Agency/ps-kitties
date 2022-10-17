@@ -70,12 +70,14 @@ html, body {
   font-size: 18px;
   line-height: 130%;
   color: white;
-  background: linear-gradient(260.39deg, #00A79D 0%, #8C41CE 96.71%);
+  background: linear-gradient(0deg, #F39200 -0.52%, #F18804 14.99%, #EB5E15 83.88%, #E94E1B 119.27%);
 
   a {
-    color: #FF00FF;
+    color: #fff;
+    font-size: 1.1em;
     font-weight: bold;
     text-decoration: underline;
+    font-family: Creepster, sans-serif;
   }
 
   &__close {
