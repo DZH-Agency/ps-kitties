@@ -18,7 +18,7 @@
               Once you've purchased your Halloween Coffins on <a href="https://crypto.com/NFT" target="_blank">crypto.com/NFT</a> drop page:
               <br>
               <br>
-              - head over to <a href="https://halloween.psychokitties.io" target="_blank">https://halloween.psychokitties.io</a> (if the site requires password, then our breeding section has not been opened up yet, get up-to-date information in our Discord or Twitter)
+              - head over to <a href="https://halloween.psychokitties.io" target="_blank">https://halloween.psychokitties.io</a> (if the site requires password, then our Monster creation section has not been opened up yet, get up-to-date information in our Discord or Twitter)
               <br>
               <br>
               - log in via Twitter (<b class="how-info-description-twitter-hint">

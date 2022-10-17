@@ -181,7 +181,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               <div class="header-terms-item">
                 <h4>BREEDING</h4>
                 <p>Once you have purchased your Love Potions, Breeding of Generation Q Baby NFT will be available at <a
-                  href="https://breeding.psychokitties.io" target="_blank">https://breeding.psychokitties.io</a>. If this website requires password, then our breeding section has not been opened up yet. You can see up-to-date information in our Discord or Twitter.</p>
+                  href="https://breeding.psychokitties.io" target="_blank">https://breeding.psychokitties.io</a>. If this website requires password, then our Monster creation section has not been opened up yet. You can see up-to-date information in our Discord or Twitter.</p>
                 <p>Breeding will be possible by verifying your wallet according to instructions, selecting your parent PsychoKitty NFTs and Love Potion, choosing your breeding style, revealing your Generation Q Baby, rinsing and repeating.</p>
                 <p>If you screen-record your Breeding process and tag @PsychoKittiesOG & @MadHareSociety on Twitter, you will be grated with a chance to win a custom Generation Q Baby NFT where you decide the traits of its character.</p>
               </div>
@@ -258,8 +258,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </p>
                 <p class="staking-how-guide-text__text">
                   - head over to <a href="https://breeding.psychokitties.io" target="_blank">https://breeding.psychokitties.io</a>
-                  (if the site requires password, then our breeding
-                  section has not been opened up yet, get up-to-date information in our Discord or Twitter)
+                  (if the site requires password, then our Monster creation section has not been opened up yet, get up-to-date information in our Discord or Twitter)
                 </p>
                 <p class="staking-how-guide-text__text">
                   - verify your wallet according to instructions
