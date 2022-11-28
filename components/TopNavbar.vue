@@ -20,12 +20,12 @@
           <!--            Discord Verification-->
           <!--          </nuxt-link>-->
           <a href="https://halloween.psychokitties.io" target="_blank" class="nbr-menu-desktop__enter-link">
-            ENTER HALLOWEEN BASH (NOT LIVE)
+            ENTER HALLOWEEN BASH (LIVE)
           </a>
         </div>
         <div class="nbr__burger-wrapper mobile-only">
           <a class="not-live" href="https://halloween.psychokitties.io" target="_blank">
-            Enter halloween bash <br> (not live)
+            Enter halloween bash <br> (live)
           </a>
           <div class="nbr__burger" :class="{opened: isOpened}" @click="isOpened = !isOpened">
             <div />

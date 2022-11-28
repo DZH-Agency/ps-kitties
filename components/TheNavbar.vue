@@ -1,9 +1,9 @@
 <template>
   <div class="nbr-wrapper" :class="{opened: isOpened}">
-    <div class="notification" v-if="displayNotification">
-      MONSTER CREATION STARTS ON 19TH OF AUGUST. FOR MORE INFO <nuxt-link to="/halloween">CLICK HERE</nuxt-link>
-      <button @click="displayNotification = false" class="notification__close">&times;</button>
-    </div>
+<!--    <div class="notification" v-if="displayNotification">-->
+<!--      MONSTER CREATION STARTS ON 19TH OF AUGUST. FOR MORE INFO <nuxt-link to="/halloween">CLICK HERE</nuxt-link>-->
+<!--      <button @click="displayNotification = false" class="notification__close">&times;</button>-->
+<!--    </div>-->
     <div class="ps-container">
       <div class="nbr">
         <img src="/logo.png" alt="logo" class="nbr__logo">
