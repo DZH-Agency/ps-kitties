@@ -194,16 +194,6 @@ As a Programmer/Designer they find themselves primarily focused on web applicati
 <br>
 Alex is a prolific sound and audio designer who has worked with most of the multimedia giants, as well as being a prolific indie and not-so-indie sound designer. She is also an experienced composer and musician, specializing in piano!
 `,
-  }, {
-    name: 'Emilio Padulo',
-    position: 'Advisor, Tokenomics Expert',
-    img: require('static/img/GamingSection/members/emilio.png'),
-    description: `
-      <strong>Darewise, Ubisoft</strong>
-      <br>
-      <br>
-      Emilio is an experienced economist who tracks and quantifies global macro and has worked in the game development industry for over 7 years. He has designed and worked on multiple projects (e.g. Life Beyond) as a game and economics designer.
-    `,
   }],
 };
 </script>
