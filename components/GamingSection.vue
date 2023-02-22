@@ -5,7 +5,7 @@
         <h2 class="gs__title">Gaming Team</h2>
         <p class="gs__text">We've been building and growing so fast recently, it's time we update you on the incredible
           people we've onboarded!</p>
-        
+
         <div class="gs-list">
           <div
             class="gs-list-item"
@@ -103,17 +103,19 @@ Lucas is a Unity front-end and back-end developer. He is an expert C# programmer
 <br>
 Lucas studied game development and programming at The First School of Multimedia Art Da Vinci. he is passionate about programming and always challenges himself to improve, when he is not working on a project he spends his time with his passion, video games, and going to the movies
 `,
-  }, {
-    name: 'Gaston Nehual Pascale',
-    position: 'Level and Game Designer',
-    img: require('static/img/GamingSection/members/gaston.png'),
-    description: `
-<strong>Octosoft Professionals, Undead Sea Fruits, Kraken Gaming, Sporesverse, Smart Eye Technology</strong>
-<br>
-<br>
-Nehual Pascale is an Unreal developer, Game designer, 3D object modeler, Level designer, and Architect with experience in construction and metaverse development. He has a diverse background in multiple areas of design, with a strong belief in team building. He studied Architecture at the UBA (University of Buenos Aires), and then trained as a Game Designer and Level Designer specializing in Unreal Engine. Nowadays he seeks to expand his knowledge in the area of programming and systems, trying to complement his design skills. He is always open to new knowledge and experiences that allow him to grow professionally. He currently works as a professor of the Level Design subject in the Technician in Video Game Development at UADE.
-`,
-  }, {
+  },
+//     {
+//     name: 'Gaston Nehual Pascale',
+//     position: 'Level and Game Designer',
+//     img: require('static/img/GamingSection/members/gaston.png'),
+//     description: `
+// <strong>Octosoft Professionals, Undead Sea Fruits, Kraken Gaming, Sporesverse, Smart Eye Technology</strong>
+// <br>
+// <br>
+// Nehual Pascale is an Unreal developer, Game designer, 3D object modeler, Level designer, and Architect with experience in construction and metaverse development. He has a diverse background in multiple areas of design, with a strong belief in team building. He studied Architecture at the UBA (University of Buenos Aires), and then trained as a Game Designer and Level Designer specializing in Unreal Engine. Nowadays he seeks to expand his knowledge in the area of programming and systems, trying to complement his design skills. He is always open to new knowledge and experiences that allow him to grow professionally. He currently works as a professor of the Level Design subject in the Technician in Video Game Development at UADE.
+// `,
+//   },
+    {
     name: 'Ignacio “Eru” Zambrano',
     position: 'Lead Programmer (Unity)',
     img: require('static/img/GamingSection/members/egnacio.png'),
