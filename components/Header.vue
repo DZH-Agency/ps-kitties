@@ -71,7 +71,7 @@
             Holder Verification
           </b-nav-item>
           <b-nav-item
-            href="https://discord.gg/psychokitties"
+            href="https://discord.gg/quantumfrenzy"
             target="_blank"
             class="mr-4"
           >

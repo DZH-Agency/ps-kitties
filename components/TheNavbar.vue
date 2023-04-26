@@ -29,7 +29,7 @@
                 <div class="popup-item__icon twitter" />
                 <span>Twitter</span>
               </a>
-              <a href="https://discord.gg/psychokitties" target="_blank" class="popup-item">
+              <a href="https://discord.gg/quantumfrenzy" target="_blank" class="popup-item">
                 <div class="popup-item__icon discord" />
                 <span>Discord</span>
               </a>
@@ -60,7 +60,7 @@
             <a href="https://twitter.com/PsychoKittiesOG" target="_blank" class="nbr-mobile-menu__item">
               Twitter
             </a>
-            <a href="https://discord.gg/psychokitties" target="_blank" class="nbr-mobile-menu__item">
+            <a href="https://discord.gg/quantumfrenzy" target="_blank" class="nbr-mobile-menu__item">
               Discord
             </a>
 <!--            <nuxt-link to="/verification" class="nbr-mobile-menu__item" @click="isOpened = false">-->

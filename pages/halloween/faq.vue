@@ -4,12 +4,12 @@
       <div class="ps-container">
         <div class="faq">
           <h1 class="creepster-heading faq__title">FAQ</h1>
-    
+
           <div class="faq-list">
             <div class="faq-list-item" v-for="(item, idx) in $options.questions" :key="idx">
               <div class="faq-list-item-question">
                 {{ item.question }}
-  
+
                 <img v-if="openedQuestionIdx === idx" src="/img/halloween/terms/minus.svg" alt="" class="faq-list-item-question__toggler" @click="openedQuestionIdx = null">
                 <img v-else src="/img/halloween/terms/plus.svg" alt="" class="faq-list-item-question__toggler" @click="openedQuestionIdx = idx">
               </div>
@@ -57,7 +57,7 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
     {
       question: 'How will the process work?',
       answer: `
-      Once you've purchased your Halloween Coffins, head over to: <a href="https://halloween.psychokitties.io" target="_blank">https://halloween.psychokitties.io</a> - simple animations will guide you through the process to login and create your monster. If you face any difficulties, chat with us on Discord at <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a>.`
+      Once you've purchased your Halloween Coffins, head over to: <a href="https://halloween.psychokitties.io" target="_blank">https://halloween.psychokitties.io</a> - simple animations will guide you through the process to login and create your monster. If you face any difficulties, chat with us on Discord at <a href="https://www.discord.gg/quantumfrenzy" target="_blank">www.discord.gg/quantumfrenzy</a>.`
     },
     {
       question: 'When and where will I receive my Halloween monster?',
@@ -78,7 +78,7 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
 
 <style scoped lang="scss">
 .faq {
-  
+
   &-wrapper {
     margin-top: 80px;
     padding-bottom: 550px;
@@ -88,7 +88,7 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
       url("/img/halloween/terms/web-bottom-right.svg") no-repeat bottom right,
       url("/img/halloween/terms/pumpkins.svg") no-repeat left 20px bottom 20px,
       url("/img/halloween/terms/web-top-left.svg") no-repeat left top 80px;
-  
+
     @media (max-width: 1200px) {
       margin-top: 16px;
       padding-bottom: 166px;
@@ -98,10 +98,10 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
         url("/img/halloween/terms/web-top-left-mobile.svg") no-repeat left top 80px;
     }
   }
-  
+
   &__title {
     margin-bottom: 24px;
-  
+
     @media (max-width: 1200px) {
       font-weight: 400;
       font-size: 28px;
@@ -111,21 +111,21 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
       margin-bottom: 40px;
     }
   }
-  
+
   &-list {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 40px;
-    
+
     @media (max-width: 1200px) {
       padding-right: 20px;
       row-gap: 24px;
     }
-    
+
     &-item {
       width: 100%;
       max-width: 100%;
-      
+
       &-question {
         background: rgba(57, 9, 104, 0.6);
         backdrop-filter: blur(10px);
@@ -139,19 +139,19 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
         padding: 20px 54px;
         border: 3px solid #7B9CD3;
         position: relative;
-  
+
         @media (max-width: 1200px) {
           font-size: 18px;
           line-height: 22px;
           padding: 12px 20px;
         }
-        
+
         &__toggler {
           position: absolute;
           top: -32px;
           right: -28px;
           cursor: pointer;
-  
+
           @media (max-width: 1200px) {
             width: 36px;
             height: 36px;
@@ -160,18 +160,18 @@ To be safe, we suggest buying Halloween Coffins directly from the CDC drop and n
           }
         }
       }
-      
+
       &-answer::v-deep {
         padding: 20px 54px 0;
         font-weight: 600;
         font-size: 18px;
         line-height: 130%;
-  
+
         @media (max-width: 1200px) {
           padding: 12px 20px 0;
           font-size: 16px;
         }
-        
+
         a {
           color: #00D2FE;
         }

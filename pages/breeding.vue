@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="ps-container">
         <div class="header">
           <div class="header-tabs">
@@ -21,15 +21,15 @@
               {{tab.title}}
             </div>
           </div>
-          
+
           <template v-if="activeTabKey === 'redeem'">
             <h1 class="header__heading">
               This drop features two redeemable scenarios
             </h1>
-  
+
             <div class="header-about">
               <img src="/img/breeding/number-one.svg" alt="" class="header-about__number-img">
-    
+
               <div class="header-about-text">
                 <p class="header-about-text__text">
                   Every person who breeded at least 1 baby will be eligible for at least 1 of 6 first-of-its-kind comic
@@ -54,7 +54,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
                 </p>
               </div>
             </div>
-  
+
             <div class="header-stats">
               <div class="header-stats-items">
                 <div class="header-stats-items-item">
@@ -103,14 +103,14 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               </div>
             </div>
           </template>
-          
+
           <template v-else-if="activeTabKey === 't&c'">
             <h1 class="header__heading">
               Terms of Service
               <br>
               For breeding of generation Q baby NFT
             </h1>
-            
+
             <div class="header-terms">
               <div class="header-terms-item">
                   <p>
@@ -198,12 +198,12 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               <div class="header-terms-item">
                 <h4>OWNERSHIP OF COMIC STRIP</h4>
                 <p>You are entitled to sell your copy of Comic Strip without claiming royalties thereof or commission from any consecutive sale of the Comic Strip. Notwithstanding anything contrary, you are not entitled to monetize or otherwise commercialize any of your Comic Strip. We retain all intellectual property rights and any other rights necessary to exploit any Comic Strip in any commercial and non-commercial way and build new partnerships and collaborations with regard to any Comic Strip. Unless we permit otherwise in writing, you are not entitled to any royalties or any other proceedings coming from such commercialization, partnerships, and collaborations. You hereby irrevocably waive the right to make any claim against us or any third party authorized by us to exploit Comic Strip based on activities, partnerships and collaborations permitted or directly executed by us.</p>
-                <p>If you have any questions, you can join our Discord channels at: <a href="https://www.discord.gg/psychokitties">www.discord.gg/psychokitties</a>.</p>
+                <p>If you have any questions, you can join our Discord channels at: <a href="https://www.discord.gg/quantumfrenzy">www.discord.gg/quantumfrenzy</a>.</p>
                 <p>You can see up-to-date breeding news at <a href="https://www.twitter.com/psychokittiesog">www.twitter.com/psychokittiesog</a>.</p>
               </div>
             </div>
           </template>
-          
+
           <template v-else-if="activeTabKey === 'faq'">
             <h1 class="header__heading">
               FAQ
@@ -212,7 +212,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               <div class="header-faq-item" v-for="(item, idx) in $options.faq" :key="idx">
                 <div @click.stop="openedQuestionIdx = openedQuestionIdx === idx ? null : idx" class="header-faq-item-question">
                   {{item.question}}
-                  
+
                   <button @click.stop="openedQuestionIdx = openedQuestionIdx === idx ? null : idx" class="header-faq-item-question__toggle" :class="{minus: idx === openedQuestionIdx}"></button>
                 </div>
                 <the-accordion :is-opened="idx === openedQuestionIdx">
@@ -221,18 +221,18 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               </div>
             </div>
           </template>
-          
-          
+
+
         </div>
       </div>
     </div>
-    
+
     <div v-if="activeTabKey === 'redeem'" class="staking-wrapper">
       <div class="ps-container">
         <div class="staking">
           <div class="staking-about">
             <img src="/img/breeding/number-two.svg" alt="" class="staking-about__number-img">
-            
+
             <div class="staking-about-text">
               <p class="staking-about-text__text">
                 Generation Q babies will start generating additional <span class="hint what-is-popup-parent">hidden staking <img
@@ -248,7 +248,7 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
               </p>
             </div>
           </div>
-          
+
           <div class="staking-how">
             <div class="staking-how-guide">
               <h2 class="staking-how-guide__title">HOW TO BREED</h2>
@@ -286,9 +286,9 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
           </div>
         </div>
       </div>
-      
+
       <div class="examples-mobile-top"></div>
-  
+
       <div class="staking-when-wrapper">
         <div class="container">
           <div class="staking-when">
@@ -303,18 +303,18 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
           </div>
         </div>
       </div>
-      
+
       <div class="examples-wrapper">
         <div class="examples"></div>
       </div>
-  
+
       <div class="examples-mobile-bottom"></div>
-      
+
       <div class="questions-wrapper">
         <div class="ps-container">
           <div class="questions">
             <p class="questions__text">
-              Have questions? Join <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a>
+              Have questions? Join <a href="https://www.discord.gg/quantumfrenzy" target="_blank">www.discord.gg/quantumfrenzy</a>
             </p>
             <p class="questions__text">
               Be up to date with the latest breeding news at <a target="_blank"
@@ -324,8 +324,8 @@ Each day your NFT is in your wallet, you will gain one point. If you sell your N
         </div>
       </div>
     </div>
-  
-  
+
+
   </div>
 </template>
 

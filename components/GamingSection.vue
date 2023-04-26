@@ -40,7 +40,7 @@ Xoakin has 11 years in operations and 6 years in game development. They have tak
   }, {
     name: 'Mer Peacock',
     position: 'Game Producer',
-    img: require('static/img/GamingSection/members/mer.png'),
+    img: require('~/static/img/GamingSection/members/mer-icon.png'),
     description: `
     <strong>Octosoft Professionals, Purple Tree Studio, PressOver, NearVerse</strong>
 <br>

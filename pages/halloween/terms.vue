@@ -9,7 +9,7 @@
           <h2 class="terms__subtitle">
             ADDITIONAL TERMS AND CONDITIONS FOR MONSTER CREATION OF HALLOWEEN BASH NFT(S)
           </h2>
-          
+
           <p class="terms__text">
             These Additional Terms and Conditions are effective as of 10 October 2022 and
             governs the creation of Halloween Bash NFTs and related events and transactions
@@ -29,7 +29,7 @@
             these terms, you may not participate in Monster Creation, purchase Halloween
             Coffins and/or Halloween Bash NFT(s).
           </p>
-          
+
           <h3 class="terms__subheading">DEFINITIONS</h3>
           <p class="terms__text">
             <b>Partner Projects</b> – NFT projects enrolled as participants and provides for
@@ -50,7 +50,7 @@
             Halloween Bash NFT(s) – an NFT depicting monster co-created and purchased
             through Monster Creation.
           </p>
-          
+
           <h3 class="terms__subheading">MONSTER CREATION</h3>
           <p class="terms__text">Once you have purchased your Halloween Coffins at Crypto.com/NFT, you will be
             granted the access to Monster Creation available at
@@ -60,13 +60,13 @@
             Monster Creation will be possible by verifying your wallet according to instructions,
             connecting your Twitter to you Crypto.com’s account, selecting traits from one of the
             Partner Projects and presenting your Halloween Coffin./p>
-  
+
           <h3 class="terms__subheading">AIRDROP</h3>
           <p class="terms__text">Halloween Bash NFT will be airdropped within a month after the Monster Creation
             is over. In case we need to extend our Monster Creation period, the Halloween Bash
             NFTs will be airdropped within a month starting from the date of the end of a new
             Monster Creation period.</p>
-  
+
           <h3 class="terms__subheading">DISCLAIMER</h3>
           <p class="terms__text">Please note that we, Upward Spiral FZCO, are able to control only the process of
             sending NFTs co-created by you to Crypto.com. Therefore, Crypto.com is the only
@@ -85,9 +85,9 @@
             the Monster Creation, selling, purchasing and owning of Halloween
             Coffins and Halloween Bash NFT(s).</b></p>
           <p class="terms__text">If you have any questions, you can join our Discord channels at:
-            <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a></p>
+            <a href="https://www.discord.gg/quantumfrenzy" target="_blank">www.discord.gg/quantumfrenzy</a></p>
           <p class="terms__text">You can see up-to-date breeding news at <a href="https://www.twitter.com/PsychoKittiesOG" target="_blank">www.twitter.com/PsychoKittiesOG</a></p>
-          
+
         </div>
       </div>
     </div>
@@ -106,7 +106,7 @@ export default {
   display: flex;
   flex-direction: column;
   row-gap: 1em;
-  
+
   &-wrapper {
     margin-top: 80px;
     padding-bottom: 550px;
@@ -116,7 +116,7 @@ export default {
       url("/img/halloween/terms/web-bottom-right.svg") no-repeat bottom right,
       url("/img/halloween/terms/pumpkins.svg") no-repeat left 20px bottom 20px,
       url("/img/halloween/terms/web-top-left.svg") no-repeat left top 80px;
-    
+
     @media (max-width: 1200px) {
       margin-top: 16px;
       padding-bottom: 166px;
@@ -126,23 +126,23 @@ export default {
         url("/img/halloween/terms/web-top-left-mobile.svg") no-repeat left top 80px;
     }
   }
-  
+
   &__text {
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
-    
+
     b {
       font-weight: 800;
       line-height: 130%;
     }
-    
+
     a {
       color: #FF00FF;
       text-decoration: underline;
     }
   }
-  
+
   &__subheading {
     margin-bottom: 8px;
     font-size: 22px;
@@ -150,10 +150,10 @@ export default {
     line-height: 130%;
     text-transform: uppercase;
   }
-  
+
   &__title {
     margin-bottom: 40px;
-    
+
     @media (max-width: 1200px) {
       font-weight: 400;
       font-size: 28px;
@@ -163,14 +163,14 @@ export default {
       margin-bottom: 20px;
     }
   }
-  
+
   &__subtitle {
     font-weight: 600;
     font-size: 28px;
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 12px;
-  
+
     @media (max-width: 1200px) {
       font-size: 24px;
     }

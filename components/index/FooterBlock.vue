@@ -12,11 +12,11 @@
       <source srcset="/img/halloween/index/footer/images-mobile.png" media="(max-width: 400px)" />
       <img class="images" src="/img/halloween/index/footer/images.png" alt="" />
     </picture>
-    
+
     <div class="ps-container">
       <div class="footer">
         <p class="footer__text">
-          Have questions? We have a dedicated channel for Halloween Bash: <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a>
+          Have questions? We have a dedicated channel for Halloween Bash: <a href="https://www.discord.gg/quantumfrenzy" target="_blank">www.discord.gg/quantumfrenzy</a>
         </p>
         <p class="footer__text">
           Be up to date with the latest Halloween Bash news at

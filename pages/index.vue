@@ -2,6 +2,7 @@
   <div>
     <TheNavbar />
     <portal-target name="app" />
+
     <div class="header-section">
       <div class="ps-container">
         <h1>
@@ -9,14 +10,16 @@
           <br>
           <span>The PsychoKitties Metaverse</span>
         </h1>
+
+        <email-subscribe />
       </div>
     </div>
-    
+
     <div :class="{'on-pause': !isBigVideoPlaying}" class="video-section" style="padding:56.25% 0 0 0;position:relative;">
       <img v-if="!isBigVideoPlaying" src="/general/play-btn.png" alt="play-btn" @click="playBigVideo">
       <iframe ref="player" src="https://player.vimeo.com/video/692925869?h=9eec22c0d9&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
-    
+
     <div class="characters-section">
       <the-characters id="characters"/>
       <the-mission id="about"/>
@@ -57,11 +60,11 @@ export default {
   },
   async mounted() {
     this.$options.vimeoPlayer = new Player(this.$refs.player)
-    
+
     this.$options.vimeoPlayer.on('pause', () => {
       this.isBigVideoPlaying = false
     })
-    
+
     const { data } = await this.$axios.get('/stats')
 
     this.leaderboard = data.leaderboard

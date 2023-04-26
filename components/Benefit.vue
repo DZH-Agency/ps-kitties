@@ -25,7 +25,7 @@
         <div class="footer d-flex justify-content-center">
           <b-button
             variant="warning join-discrd"
-            href="https://discord.gg/psychokitties"
+            href="https://discord.gg/quantumfrenzy"
             target="_blank"
             >Join Discord</b-button
           >

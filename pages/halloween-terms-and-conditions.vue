@@ -587,7 +587,7 @@ you may not access or use the Site.
         If you have any questions or concerns, or need to submit any information, you can contact us via Discord, Twitter or regular mail directed to:
 </p>
         <p><u>Address</u>: IFZA Dubai Building A, Unit 1, Dubai Silicon Oasis, Dubai, United Arab Emirates 00000</p>
-        <p>If you have any questions, you can also join our Discord channels at:  <a href="https://www.discord.gg/psychokitties" target="_blank">www.discord.gg/psychokitties</a>.</p>
+        <p>If you have any questions, you can also join our Discord channels at:  <a href="https://www.discord.gg/quantumfrenzy" target="_blank">www.discord.gg/quantumfrenzy</a>.</p>
         <p>You can see up-to-date news at <a href="https://www.twitter.com/psychokittiesOG" target="_blank">www.twitter.com/psychokittiesOG</a>.</p>
       `
     },

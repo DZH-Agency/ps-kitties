@@ -2,15 +2,15 @@
 
 .header-section {
   padding-top: 150px;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   background:
-          url("static/general/waves-left.png") no-repeat left top -50px,
-          url("static/general/waves-right.png") no-repeat right top -50px;
+          url("static/general/waves-left.png") no-repeat left top / auto 100%,
+          url("static/general/waves-right.png") no-repeat right top / auto 100%;
 
   @media (max-width: 1200px) {
     background: none;
     padding-top: 100px;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 
   h1 {

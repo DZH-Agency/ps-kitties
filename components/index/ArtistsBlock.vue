@@ -5,7 +5,7 @@
         <h2 class="artists__title">
           Brought to you by industry-leading NFT artists
         </h2>
-        
+
         <div class="artists-list">
           <div v-for="(proj, idx) in $options.projects" :key="idx" class="artists-list-item">
             <div class="artists-list-item-info">
@@ -19,7 +19,7 @@
                 <span v-html="proj.descriptionHeading"></span>{{ openedProjectIdx === idx ? '' : '...' }}
                 <br>
                 <br>
-                
+
                 <TheAccordion :is-opened="openedProjectIdx === idx">
                   <span v-html="proj.description" />
                 </TheAccordion>
@@ -39,7 +39,7 @@
                 </div>
               </div>
               <img class="artists-list-item-card__img" :src="proj.cardImg" alt="" />
-              
+
               <img src="/img/halloween/index/artists/pumpkin.svg" alt="" class="artists-list-item-card__pumpkin">
             </div>
           </div>
@@ -56,7 +56,7 @@ export default {
     {
       socials: {
         url: 'https://www.madharesociety.com//',
-        discord: 'https://discord.gg/psychokitties',
+        discord: 'https://discord.gg/quantumfrenzy',
         twitter: 'https://twitter.com/MadHareSociety?t=5R1AY_d6DFeF-Jrxel1_hg&s=09',
         instagram: 'https://instagram.com/madharesociety?igshid=YmMyMTA2M2Y='
       },
@@ -77,7 +77,7 @@ From the bottom of DaRealGenius's heart, he hopes you have a great time creating
     {
       socials: {
         url: 'https://www.psychokitties.io/',
-        discord: 'https://discord.gg/psychokitties',
+        discord: 'https://discord.gg/quantumfrenzy',
         twitter: 'https://twitter.com/PsychoKittiesOG?t=epIatjkMmEBwt9lOeBwcxw&s=09',
         instagram: 'https://instagram.com/psychokittiesog?igshid=YmMyMTA2M2Y='
       },
