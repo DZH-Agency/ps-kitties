@@ -11,7 +11,7 @@
           <span>The PsychoKitties Metaverse</span>
         </h1>
 
-        <email-subscribe />
+        <email-subscribe v-if="!isSubscribed" />
       </div>
     </div>
 
@@ -51,12 +51,15 @@ export default {
         max_trade_today: "",
         total_volume: "",
       },
-      isBigVideoPlaying: false
+      isBigVideoPlaying: false,
+      isSubscribed: false,
     }
   },
   vimeoPlayer: null,
   beforeMount() {
     window.addEventListener('click', this.loadVideo)
+
+    this.isSubscribed = !!localStorage.getItem('email-subscribed')
   },
   async mounted() {
     this.$options.vimeoPlayer = new Player(this.$refs.player)
