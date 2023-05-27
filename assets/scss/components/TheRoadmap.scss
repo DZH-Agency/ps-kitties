@@ -166,8 +166,8 @@
       z-index: 1;
       position: relative;
       font-family: 'Hammersmith One', sans-serif;
-      font-weight: 400;
-      font-size: 24px;
+      font-weight: 600;
+      font-size: 18px;
       line-height: 30px;
 
       @media (max-width: 1200px) {
@@ -185,6 +185,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: auto;
+
+      &.full-width {
+        grid-template-columns: 1fr;
+      }
 
       @media (max-width: 1200px) {
         grid-template-columns: 1fr;
@@ -271,7 +275,7 @@
       }
 
       &.rd-3 {
-        width: 310px;
+        width: 490px;
         @media (max-width: 1200px) {
           width: 248px;
         }
@@ -289,8 +293,8 @@
       position: relative;
       z-index: 1;
       max-width: 100%;
-      height: 193px;
-      width: 337px;
+      height: 485px;
+      width: 865px;
       border: 1px solid transparent;
       background-clip: padding-box;
       border-radius: 25px 0;
@@ -305,6 +309,7 @@
       }
 
       @media (max-width: 1200px) {
+        height: 300px;
         max-width: 400px;
         width: 80%;
         padding-bottom: 50%;
