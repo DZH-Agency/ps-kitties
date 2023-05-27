@@ -265,33 +265,70 @@
       }
     }
 
-    &__btn {
-      color: $secondary-white;
+    &-actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      column-gap: 24px;
       margin-top: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 24px;
-      padding: 16px 36px;
-      background: linear-gradient(270deg, #DD3741 0%, #FF00CC 50.52%, #6003A9 100%);
-      border-radius: 0 16px;
-      align-self: flex-start;
 
       @media (max-width: 1200px) {
-        padding: 18px 24px;
-        font-size: 14px;
-        line-height: 19px;
+        grid-template-columns: 1fr;
+        row-gap: 24px;
         align-self: center;
+        max-width: 500px;
       }
 
-      @media (max-width: 600px) {
-        flex-wrap: wrap;
-        align-self: stretch;
-        padding: 18px 12px;
-        font-size: 14px;
-        line-height: 19px;
+      &-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 28px;
+
+        &__link {
+          max-height: 55px;
+          color: $secondary-white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          padding: 16px 36px;
+          background: linear-gradient(270deg, #DD3741 0%, #FF00CC 50.52%, #6003A9 100%);
+          border-radius: 0 16px;
+          align-self: flex-start;
+          width: 100%;
+
+          @media (max-width: 1200px) {
+            padding: 18px 24px;
+            font-size: 14px;
+            line-height: 19px;
+            align-self: center;
+          }
+
+          @media (max-width: 600px) {
+            flex-wrap: wrap;
+            align-self: stretch;
+            padding: 18px 12px;
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+      }
+
+      &__stats {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FF00FF;
+        background: rgba(0, 0, 0, 0.86);
+        border: 2px solid #FFFFFF;
+        border-radius: 0 16px;
+        padding: 16px;
+        margin-bottom: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

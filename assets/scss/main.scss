@@ -102,6 +102,19 @@ html, body {
   }
 }
 
+.opensea-logo {
+  max-height: 100%;
+  margin-left: 4px;
+  display: inline-block;
+  width: 133px;
+  height: 30px;
+  background: url("~static/img/verification/opensea.png") no-repeat bottom / contain;
+
+  @media (max-width: 1200px) {
+    width: 110px;
+  }
+}
+
 @media (max-width: 1200px) {
   .desktop-only {
     display: none !important;

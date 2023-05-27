@@ -14,9 +14,6 @@
            >
             {{ item.title }}
            </button>
-           <button class="ch-navbar-menu__item tba">
-            TBA
-           </button>
          </div>
        </div>
        <div class="ch-content">
@@ -36,9 +33,17 @@
            <div class="ch-right-hint" v-for="(hint, idx) in character.hints" :key="idx">
              <strong class="ch-right-hint__title">{{ hint.title }}</strong> <span v-html="hint.text"></span>
            </div>
-           <a :href="character.button.href" target="_blank" class="ch-right__btn">
-            {{ character.button.text }} <span class="crypto-com-nft-logo"></span>
-           </a>
+           <div class="ch-right-actions">
+             <section class="ch-right-actions-links">
+               <a :href="character.button.href" class="ch-right-actions-links__link">
+                 {{ character.button.text }} <span class="crypto-com-nft-logo"></span>
+               </a>
+               <a :href="character.button.hrefOpenSea" class="ch-right-actions-links__link">
+                 {{ character.button.text }} <span class="opensea-logo"></span>
+               </a>
+             </section>
+             <span v-if="character.tradedStats" class="ch-right-actions__stats">{{ character.tradedStats }}</span>
+           </div>
          </div>
        </div>
      </div>
@@ -93,9 +98,11 @@ However the question remains, which side of the PsychoKitties race will destiny 
         { title: 'Statistics: ', text: '10,000 unique collectibles generated from 96 traits'}
       ],
       button: {
-        text: 'Buy a PsychoKitty on',
-        href: 'https://crypto.com/nft/collection/faa3d8da88f9ee2f25267e895db71471'
-      }
+        text: 'Buy on',
+        href: 'https://crypto.com/nft/collection/faa3d8da88f9ee2f25267e895db71471',
+        hrefOpenSea: '#'
+      },
+      tradedStats: '$13.4M+ traded'
     },
     pm: {
       portraitImg: require('/static/TheCharacters/pm-portrait.jpg'),
@@ -112,21 +119,41 @@ The PsychoMollies were born, but they were completely out of control...`,
         { title: 'Statistics: ', text: '10,000 unique collectibles generated from 105 traits'}
       ],
       button: {
-        text: 'Buy a PsychoMolly on',
-        href: 'https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d'
+        text: 'Buy on',
+        href: 'https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d',
+        hrefOpenSea: '#'
+      },
+      tradedStats: '$3.5M+ traded'
+    },
+    genq: {
+      portraitImg: require('/static/TheCharacters/gen-q-portrait.png'),
+      title: 'Gen-Q Elite Babies',
+      text: `
+        In ancient Egypt, around 1279 BC, a PsychoMolly named Nefertari formed a powerful bond with a Mad Hare called Anubis. Their love bloomed amid the construction of the colossal temples and monumental pyramids. The resulting Elite Baby possessed the ability to manipulate the sands of time, altering the course of events throughout history.\n
+In the futuristic era of the 4000s, on the thriving Mars colony, a PsychoMolly named Aurora found her soulmate in a resourceful PsychoKitty named Xander. Together, they harnessed the power of dark energy to create a gravitational force strong enough to bend spacetime, ultimately producing an Elite Baby with unparalleled mastery over the fabric of the universe.\n
+However, not all love stories had such fortuitous outcomes. A tale unfolds of a PsychoKitty named Nero, who shared a passionate love with a PsychoMolly named Luna. But their happiness was short-lived, as a devious Mad Hare named Vex sought to sow discord between them. Vex manipulated events, making it appear as though Nero had betrayed Luna. Luna, devastated and blinded by grief, succumbed to Vex's charms, leaving Nero behind.\n
+Luna and Vex created an Elite Baby, but the child's abilities were tainted by the deception surrounding its conception. The child could weave illusions so intricate that the line between reality and fantasy blurred, adding a new layer of chaos to the war across time and space\n
+As love, deception, and power continued to intertwine, the fate of the universe hung in the balance, with each new union of PsychoMollies and their partners bringing the potential for salvation or further turmoil.
+      `,
+      button: {
+        text: 'Buy on',
+        href: 'https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d',
+        hrefOpenSea: '#'
       }
     }
   },
   tabs: [
     { title: 'PsychoKitties', id: 'ps'},
-    { title: 'PsychoMollies', id: 'pm'}
+    { title: 'PsychoMollies', id: 'pm'},
+    { title: 'Gen-Q Elite Babies', id: 'genq'}
   ],
   data() {
     return {
       selectedTab: 'ps',
       isReadFull: {
         ps: false,
-        pm: false
+        pm: false,
+        genq: false
       }
     }
   },
