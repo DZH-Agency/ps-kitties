@@ -41,9 +41,9 @@ export default {
         { title: `$${donated}`, text: 'Donated to charities'},
         { title: `$${(537500).toLocaleString('en-US')}`, text: 'Worth of free partner project NFTs airdropped'},
         { title: '3', text: 'Wall mural painted'},
-        { title: `$${this.stats.total_volume}`, text: 'Volume traded'},
+        // { title: `$${this.stats.total_volume}`, text: 'Volume traded'},
         // { title: `$${this.stats.max_trade_today}`, text: 'Highest sale of the day'},
-        { title: `$${this.stats.max_trade}`, text: 'Highest sale ever'},
+        // { title: `$${this.stats.max_trade}`, text: 'Highest sale ever'},
       ]
     }
   }

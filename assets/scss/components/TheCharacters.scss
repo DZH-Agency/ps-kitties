@@ -241,7 +241,9 @@
       line-height: 130%;
       color: $main-white;
 
-
+      & > span ::v-deep span {
+        color: #77787C;
+      }
 
       @media (max-width: 1200px) {
         font-size: 16px;

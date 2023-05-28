@@ -71,12 +71,7 @@ export default {
     const { data } = await this.$axios.get('/stats')
 
     this.leaderboard = data.leaderboard
-    this.stats.max_trade = Number(Number(data.max_trade).toFixed(0)).toLocaleString('en-US')
     this.stats.max_trade_today = Number(Number(data.max_trade_today).toFixed(0)).toLocaleString('en-US')
-    const total = Number(data.total_volume).toFixed(0)
-    const totalMillionStr = Number(`${total.slice(0, 2)}.${total.slice(2)}`)
-    const totalMillionNum = Math.round((totalMillionStr + Number.EPSILON) * 10) / 10
-    this.stats.total_volume = `${totalMillionNum.toString().replace('.', ',')}M`
   },
   methods: {
     playBigVideo() {
