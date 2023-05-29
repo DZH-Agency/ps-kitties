@@ -68,10 +68,14 @@ export default {
       this.isBigVideoPlaying = false
     })
 
-    const { data } = await this.$axios.get('/stats')
+    try {
+      const { data } = await this.$axios.get('/stats')
 
-    this.leaderboard = data.leaderboard
-    this.stats.max_trade_today = Number(Number(data.max_trade_today).toFixed(0)).toLocaleString('en-US')
+      this.leaderboard = data.leaderboard
+      this.stats.max_trade_today = Number(Number(data.max_trade_today).toFixed(0)).toLocaleString('en-US')
+    } catch (e) {
+      console.log(e)
+    }
   },
   methods: {
     playBigVideo() {

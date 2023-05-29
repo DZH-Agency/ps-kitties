@@ -6,7 +6,8 @@ export default {
     { title: 'Roadmap', href: '/#roadmap' },
     { title: 'Artist', href: '/#artist' },
     { title: 'Team', href: '/#team' },
-    { title: 'Ranking', href: '/#ranking' }
+    { title: 'Ranking', href: '/#ranking' },
+    { title: 'Tutorials', href: '/tutorials' },
   ],
   HALLOWEEN_NAVBAR_MENU_ITEMS: [
     { title: 'Overview', href: '/halloween' },

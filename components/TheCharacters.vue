@@ -35,13 +35,13 @@
            </div>
            <div class="ch-right-actions">
              <section class="ch-right-actions-links">
-               <a :href="character.button.href" class="ch-right-actions-links__link">
+               <a :href="character.button.href" target="_blank" class="ch-right-actions-links__link">
                  {{ character.button.text }} <span class="crypto-com-nft-logo"></span>
                </a>
-<!--               <a :href="character.button.hrefOpenSea" class="ch-right-actions-links__link">-->
-<!--                 {{ character.button.text }} <span class="opensea-logo"></span>-->
-<!--               </a>-->
-               <a class="ch-right-actions-links__link">
+               <a v-if="character.button.hrefOpenSea" target="_blank" :href="character.button.hrefOpenSea" class="ch-right-actions-links__link">
+                 {{ character.button.text }} <span class="opensea-logo"></span>
+               </a>
+               <a v-else class="ch-right-actions-links__link">
                  MIGRATION SOON
                </a>
              </section>
@@ -97,13 +97,13 @@ The history and the future of mankind is being rewritten daily. Now is your chan
 
 However the question remains, which side of the PsychoKitties race will destiny take you?`,
       hints: [
-        { title: 'Utility: ', text: `Staking <span>(under construction)</span>, chance to get free NFT airdrops, <a href="/terms-and-conditions">IP rights</a>, playable character in <a href="#" target="_blank">Quantum Frenzy</a> game, exclusive <a href="#" target="_blank">Discord</a> channels. More to come.`},
+        { title: 'Utility: ', text: `Staking <span>(under construction)</span>, chance to get free NFT airdrops, <a href="/terms-and-conditions">IP rights</a>, playable character in <a href="#" target="_blank">Quantum Frenzy</a> game, exclusive <a href="https://discord.gg/quantumfrenzy" target="_blank">Discord</a> channels. More to come.`},
         { title: 'Statistics: ', text: '10,000 unique collectibles generated from 96 traits'}
       ],
       button: {
         text: 'Buy on',
         href: 'https://crypto.com/nft/collection/faa3d8da88f9ee2f25267e895db71471',
-        hrefOpenSea: '#'
+        hrefOpenSea: 'https://opensea.io/collection/psychokitties-the-new-era-10'
       },
       tradedStats: '$13.4M+ traded'
     },
@@ -124,7 +124,7 @@ The PsychoMollies were born, but they were completely out of control...`,
       button: {
         text: 'Buy on',
         href: 'https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d',
-        hrefOpenSea: '#'
+        hrefOpenSea: ''
       },
       tradedStats: '$3.5M+ traded'
     },
@@ -141,7 +141,7 @@ As love, deception, and power continued to intertwine, the fate of the universe 
       button: {
         text: 'Buy on',
         href: 'https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d',
-        hrefOpenSea: '#'
+        hrefOpenSea: 'https://opensea.io/collection/generation-q-elite-babies'
       }
     }
   },
