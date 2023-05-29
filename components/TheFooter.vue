@@ -21,7 +21,7 @@
             <nuxt-link to="/terms-and-conditions" class="mobile-only ft-social__terms">PK/PM Terms & Conditions</nuxt-link>
             <nuxt-link to="/halloween-terms-and-conditions" class="mobile-only ft-social__terms">Halloween Bash Terms & Conditions</nuxt-link>
           </div>
-          
+
           <div class="ft-social mobile-only">
             <a class="ft-social__item" :href="social.href" target="_blank" v-for="social in $options.socialItems">
               <img :src="social.img" alt="social icon">
@@ -34,7 +34,7 @@
       <div class="ps-container">
         <div class="privacy">
           <div class="privacy__text">
-            Copyright © 2022 PsychoKitties.
+            Copyright © {{ $options.year }} PsychoKitties.
             <br class="mobile-only">
             All Right Reserved
           </div>
@@ -57,6 +57,7 @@ import constants from '@/constants.js'
 export default {
   name: 'TheFooter',
   menuItems: constants.NAVBAR_MENU_ITEMS,
+  year: new Date().getFullYear(),
   socialItems: [
     { img: require('static/TheFooter/twitter.png'), href: 'https://twitter.com/PsychoKittiesOG' },
   ]

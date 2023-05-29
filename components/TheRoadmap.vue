@@ -18,10 +18,8 @@
           </div>
           <div class="rd-gen-row full-width">
             <div class="rd-gen__video-box">
-              <div class="rd-gen__video"><div class="video-blur" v-if="!players.player1.isPlaying"></div>
-                <img v-if="!players.player1.isPlaying" src="/general/play-btn.png" alt="play-btn" @click="players.player1.instance.play()">
-
-                <iframe ref="player1" src="https://player.vimeo.com/video/692926817?h=5e8473c4b0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <div class="rd-gen__video">
+                <iframe src="https://youtube.com/embed/4Cyhxl3Y1go" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -35,10 +33,8 @@
           </div>
           <div class="rd-gen-row full-width">
             <div class="rd-gen__video-box">
-              <div class="rd-gen__video"><div class="video-blur" v-if="!players.player2.isPlaying"></div>
-                <img v-if="!players.player2.isPlaying" src="/general/play-btn.png" alt="play-btn" @click="players.player2.instance.play()">
-
-                <iframe ref="player2" src="https://player.vimeo.com/video/692926817?h=5e8473c4b0&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <div class="rd-gen__video">
+                <iframe src="https://youtube.com/embed/yfLZQdssBts" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -100,44 +96,8 @@
 </template>
 
 <script>
-import Player from '@vimeo/player'
-
 export default {
   name: 'TheRoadmap',
-  data() {
-    return {
-      players: {
-        player1: {
-          instance: null,
-          isPlaying: false,
-        },
-        player2: {
-          instance: null,
-          isPlaying: false,
-        }
-      }
-    }
-  },
-  mounted() {
-    this.players.player1.instance = new Player(this.$refs.player1)
-    this.players.player2.instance = new Player(this.$refs.player2)
-
-    this.players.player2.instance.on('pause', () => {
-      this.players.player2.isPlaying = false
-    })
-
-    this.players.player2.instance.on('play', () => {
-      this.players.player2.isPlaying = true
-    })
-
-    this.players.player1.instance.on('pause', () => {
-      this.players.player1.isPlaying = false
-    })
-
-    this.players.player1.instance.on('play', () => {
-      this.players.player1.isPlaying = true
-    })
-  }
 }
 </script>
 

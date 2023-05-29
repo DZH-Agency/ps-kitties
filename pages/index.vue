@@ -11,7 +11,7 @@
           <span>The PsychoKitties Metaverse</span>
         </h1>
 
-<!--        <email-subscribe v-if="!isSubscribed" />-->
+        <email-subscribe v-if="!isSubscribed" />
       </div>
     </div>
 
