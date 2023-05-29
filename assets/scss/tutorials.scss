@@ -47,6 +47,25 @@
       align-items: center;
       justify-content: center;
 
+      &__hint {
+        padding: 40px 70px;
+        border-radius: 0 60px;
+        max-width: 914px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: #00D2FE;
+        background: #390968;
+        backdrop-filter: blur(10px);
+        border: 5px solid #FF00F8;
+        margin: 36px auto 0 auto;
+
+        @media (max-width: 1200px) {
+          border-radius: 0 32px;
+          padding: 32px
+        }
+      }
+
       &__title {
         font-size: 36px;
         line-height: 45px;
@@ -57,7 +76,7 @@
           font-size: 24px;
         }
 
-        strong {
+        ::v-deep strong {
           color: #00D2FE;
         }
       }
@@ -70,6 +89,10 @@
         max-width: 936px;
         margin-bottom: 21px;
         align-items: center;
+        position: relative;
+        z-index: 1;
+        border-radius: 25px 0;
+        overflow: hidden;
 
         @media (max-width: 1200px) {
           max-width: 100%;
@@ -80,16 +103,9 @@
           position: relative;
           height: 100%;
           width: 100%;
+          border: 5px solid transparent;
+          border-radius: 25px 0;
           z-index: 1;
-
-          & > img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-            z-index: 2;
-          }
 
           &::before {
             content: "";
@@ -103,7 +119,7 @@
           &::after {
             content: "";
             position: absolute;
-            inset: -1px;
+            inset: -5px;
             z-index: -2;
             background: linear-gradient(262.72deg, #AF31AA 0%, #7B9CD3 100%);
             border-radius: 25px 0;
@@ -309,6 +325,18 @@
   background: rgba(0, 0, 0, 0.4);
   border-radius: 25px 0;
   overflow: hidden;
+  //touch-action: none;
+  //pointer-events: none;
+
+  & > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: none;
+    touch-action: none;
+  }
 }
 
 iframe {
