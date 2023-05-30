@@ -97,7 +97,7 @@ The history and the future of mankind is being rewritten daily. Now is your chan
 
 However the question remains, which side of the PsychoKitties race will destiny take you?`,
       hints: [
-        { title: 'Utility: ', text: `Staking <span>(under construction)</span>, chance to get free NFT airdrops, <a href="/terms-and-conditions">IP rights</a>, playable character in <a href="#" target="_blank">Quantum Frenzy</a> game, exclusive <a href="https://discord.gg/quantumfrenzy" target="_blank">Discord</a> channels. More to come.`},
+        { title: 'Utility: ', text: `Staking <span>(under construction)</span>, chance to get free NFT airdrops, <a href="/terms-and-conditions">IP rights</a>, playable character in <a href="https://www.quantumfrenzy.com" target="_blank">Quantum Frenzy</a> game, exclusive <a href="https://discord.gg/quantumfrenzy" target="_blank">Discord</a> channels. More to come.`},
         { title: 'Statistics: ', text: '10,000 unique collectibles generated from 96 traits'}
       ],
       button: {
@@ -118,7 +118,7 @@ Naturally, the PsychoKitties who got a hold of the information traveled back to 
 The research papers of HMGA2 gene modification were stolen, a new lab was built and 10,000 female kitten embryos disappeared from the most guarded DNA-storage facility on Earth during 2045.
 The PsychoMollies were born, but they were completely out of control...`,
       hints: [
-        { title: 'Utility: ', text: `<a href="/terms-and-conditions">IP rights</a>, family advantage in <a href="#" target="_blank">Quantum Frenzy</a> game if staked with the right baby and PsychoKitty. More to come.`},
+        { title: 'Utility: ', text: `<a href="/terms-and-conditions">IP rights</a>, family advantage in <a href="https://www.quantumfrenzy.com" target="_blank">Quantum Frenzy</a> game if staked with the right baby and PsychoKitty. More to come.`},
         { title: 'Statistics: ', text: '10,000 unique collectibles generated from 105 traits'}
       ],
       button: {

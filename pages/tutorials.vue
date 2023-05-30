@@ -127,7 +127,7 @@ export default {
     {
       staticKey: 'withdraw',
       title: 'Step-by-step guide on how to <strong>withdraw an NFT</strong> from Crypto.com to a DeFi wallet',
-      videoUrl: 'https://youtube.com/embed/khuvcVaMUKs',
+      videoUrl: 'https://youtube.com/embed/83SCPQF7xZ4',
       steps: [
         {
           text: `First, you will need to have both a Crypto.com account and a DeFi wallet set up. Make sure that you have sufficient funds to cover any associated fees. The cost for withdrawal from Crypto.com account is approximately .01 Matic and can be paid from your Account Balance, Credit Card, or by connecting a DeFi wallet that has sufficient funds.`,
@@ -142,7 +142,7 @@ export default {
           text: `Once you have entered the correct address, select the network "Polygon"`,
         },
         {
-          text: `Make sure that you have enough funds in your Crypto.com account or Pay with Credit Card or use a DeFi wallet that has funds to cover any associated fees.`,
+          text: `Make sure that you have enough funds in your Crypto.com NFT account balance or Pay with Debit/Credit Card or use a Crypto.com Pay wallet that has funds to cover any associated fees.`,
         },
         {
           text: `Review your withdrawal details carefully to ensure that everything is correct. Once you are satisfied, click on the "Withdraw" button to initiate the transaction.`,
