@@ -130,7 +130,7 @@ export default {
       videoUrl: 'https://youtube.com/embed/83SCPQF7xZ4',
       steps: [
         {
-          text: `First, you will need to have both a Crypto.com account and a DeFi wallet set up. Make sure that you have sufficient funds to cover any associated fees. The cost for withdrawal from Crypto.com account is approximately .01 Matic and can be paid from your Account Balance, Credit Card, or by connecting a DeFi wallet that has sufficient funds.`,
+          text: `First, you will need to have both a Crypto.com account and a DeFi wallet set up. Make sure that you have sufficient funds to cover any associated fees. The cost for withdrawal from Crypto.com account is approximately 0.01 Matic and can be paid from your Account Balance, Credit Card, or by Crypto.com Pay wallet that has sufficient funds.`,
         },
         {
           text: `Log in to your Crypto.com account and navigate to the ‘my profile’ tab. Select the NFT that you would like to withdraw and click on the "Withdraw" button.`,
