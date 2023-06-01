@@ -34,7 +34,8 @@ export default {
       { hid: 'twitter:title', name: 'twitter:title', content: title },
       { hid: 'twitter:description', name: 'twitter:description', content: description },
       { hid: 'twitter:image', name: 'twitter:image', content: image_url },
-      { hid: 'facebook-domain-verification', name: 'facebook-domain-verification', content: 'y3t55aq5bk5hpfwyf7p2vtxb8wny2d' }
+      { hid: 'facebook-domain-verification', name: 'facebook-domain-verification', content: 'y3t55aq5bk5hpfwyf7p2vtxb8wny2d' },
+      { name: 'google-site-verification', content: '_Vw12AXiUAz_V8ywMwPZH-4VnxvW843cUOHt621ukAk' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/logo.png' },
