@@ -97,7 +97,7 @@ The history and the future of mankind is being rewritten daily. Now is your chan
 
 However the question remains, which side of the PsychoKitties race will destiny take you?`,
       hints: [
-        { title: 'Utility: ', text: `Staking <span>(under construction)</span>, chance to get free NFT airdrops, <a href="/terms-and-conditions">IP rights</a>, playable character in <a href="https://www.quantumfrenzy.com" target="_blank">Quantum Frenzy</a> game, exclusive <a href="https://discord.gg/quantumfrenzy" target="_blank">Discord</a> channels. More to come.`},
+        { title: 'Utility: ', text: `Staking <span>(under construction)</span>, chance to get free NFT airdrops, <a href="/terms-and-conditions">IP rights</a>, playable character in <a href="https://www.quantumfrenzy.com" target="_blank">Quantum Frenzy</a> game, exclusive <a href="https://discord.gg/quantumfrenzy" target="_blank">Discord</a> channels, secret utility <span>(under construction)</span>.`},
         { title: 'Statistics: ', text: '10,000 unique collectibles generated from 96 traits'}
       ],
       button: {
