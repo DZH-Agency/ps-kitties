@@ -25,6 +25,7 @@
           <div class="rt-actions-tabs">
             <button class="rt-actions-tabs__tab" :class="{active: collection === 'kitty'}" @click="collection = 'kitty'">PsychoKitties</button>
             <button class="rt-actions-tabs__tab" :class="{active: collection === 'molly'}" @click="collection = 'molly'">PsychoMollies</button>
+            <button class="rt-actions-tabs__tab" :class="{active: collection === 'genqbabies'}" @click="collection = 'genqbabies'">Gen-Q Elite Babies</button>
           </div>
         </div>
         <div class="rt-table">
@@ -100,11 +101,11 @@ export default {
     availablePages() {
       const startPages = this.pages.slice(0, this.startPagesCount)
       const endPages = this.pages.slice(-this.endPagesCount).filter(pageNumber => !startPages.includes(pageNumber))
-    
+
       const middlePages = this._getMiddlePages(startPages, endPages)
-    
+
       const rawPages = [...startPages, ...middlePages, ...endPages]
-    
+
       return this._processPages(rawPages)
     }
   },
@@ -116,11 +117,16 @@ export default {
       await this.loadItems()
     }, 300),
     getNftLink(item) {
-      const collectionId = this.collection === 'kitty' ? 'faa3d8da88f9ee2f25267e895db71471' : '69d0601d6d4ecd0ea670835645d47b0d'
-      return `https://crypto.com/nft/collection/${collectionId}?asset=${item.assetId}&edition=${item.defaultEditionId}&detail-page=MARKETPLACE`
+      const collectionIdByCollection = {
+        kitty: 'faa3d8da88f9ee2f25267e895db71471',
+        molly: '69d0601d6d4ecd0ea670835645d47b0d',
+        genqbabies: 'b8a462abcadfa08f1e678df15bbacc41'
+      }
+      const collectionId = collectionIdByCollection[this.collection]
+      return `https://crypto.com/nft/collection/${collectionId}?asset=${item.assetId || item.id}&edition=${item.defaultEditionId}&detail-page=MARKETPLACE`
     },
     async loadItems() {
-      const { data } = await this.$axios.get('/search/', {
+      const { data } = await this.$axios.get('/search', {
         params: {
           page: this.currentPageNumber,
           sort_by: this.sort,
@@ -129,7 +135,7 @@ export default {
           query: this.search
         }
       })
-  
+
       this.totalPagesCount = data.pagination.pages
       this.items = data.results
     },
@@ -138,23 +144,23 @@ export default {
       const middlePagesTemplate = middlePagesRawTemplate.map((pageNumber, index) => {
         return this.currentPageNumber - this.middlePagesOffset + index
       })
-    
+
       const middlePages = middlePagesTemplate.filter(pageNumber => pageNumber > 0 && pageNumber < this.totalPagesCount)
-    
+
       const uniqueMiddlePages = middlePages.filter(pageNumber => !startPages.includes(pageNumber) && !endPages.includes(pageNumber))
-    
+
       if (uniqueMiddlePages.length === 0) {
         return endPages.length ? ['...'] : []
       }
-  
+
       if (uniqueMiddlePages[0] !== startPages[startPages.length - 1] + 1) {
         uniqueMiddlePages.splice(0, 0, '...')
       }
-    
+
       if (uniqueMiddlePages[uniqueMiddlePages.length - 1] !== endPages[0] - 1) {
         uniqueMiddlePages.push('...')
       }
-    
+
       return uniqueMiddlePages
     },
     _processPages(pages) {
@@ -163,12 +169,12 @@ export default {
           number: null,
           isDummy: true
         }
-      
+
         if (typeof pageItem === 'number') {
           pageData.number = pageItem
           pageData.isDummy = false
         }
-      
+
         return pageData
       })
     }

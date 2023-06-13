@@ -71,7 +71,7 @@
                 <img class="rd-gen__img ld-3" src="/TheRoadmap/ld-3.png" alt="portrait"/>
               </div>
             <div class="rd-gen__text">
-              Get excited about our upcoming Interactive Comic Application that allows you to win rewards & puts the fate of the PsychoKitties & Mad Hare Society storyline in the community’s hands.
+              Make sure you are subscribed to our email list, so you won’t miss out on any important information such as key dates for our token launch & how to prepare, how to earn token vouchers by helping us test the game & more! Like they say, you snooze, you lose!
               <div class="rd-point-small right"></div>
             </div>
           </div>
