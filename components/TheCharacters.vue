@@ -138,9 +138,12 @@ However, not all love stories had such fortuitous outcomes. A tale unfolds of a 
 Luna and Vex created an Elite Baby, but the child's abilities were tainted by the deception surrounding its conception. The child could weave illusions so intricate that the line between reality and fantasy blurred, adding a new layer of chaos to the war across time and space\n
 As love, deception, and power continued to intertwine, the fate of the universe hung in the balance, with each new union of PsychoMollies and their partners bringing the potential for salvation or further turmoil.
       `,
+      hints: [
+{ title: 'Utility: ', text: `Unlock special <a target="_blank" href="https://www.quantumfrenzy.com">Quantum Frenzy</a> game advantage to your playable PsychoKitties character if you stake the whole family. (Baby’s real parents are in the NFT metadata).`},
+      ],
       button: {
         text: 'Buy on',
-        href: 'https://crypto.com/nft/collection/69d0601d6d4ecd0ea670835645d47b0d',
+        href: 'https://crypto.com/nft/collection/b8a462abcadfa08f1e678df15bbacc41',
         hrefOpenSea: 'https://opensea.io/collection/generation-q-elite-babies'
       }
     }
