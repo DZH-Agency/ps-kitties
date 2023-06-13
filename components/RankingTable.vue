@@ -123,7 +123,7 @@ export default {
         genqbabies: 'b8a462abcadfa08f1e678df15bbacc41'
       }
       const collectionId = collectionIdByCollection[this.collection]
-      return `https://crypto.com/nft/collection/${collectionId}?asset=${item.assetId || item.id}&edition=${item.defaultEditionId}&detail-page=MARKETPLACE`
+      return `https://crypto.com/nft/collection/${collectionId}?asset=${item.assetId || item.ID}&edition=${item.defaultEditionId}&detail-page=MARKETPLACE`
     },
     async loadItems() {
       const { data } = await this.$axios.get(this.collection === 'genqbabies' ? 'https://x-api.madharesociety.com/search' : '/search', {
