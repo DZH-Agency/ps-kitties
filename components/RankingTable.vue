@@ -31,12 +31,12 @@
         <div class="rt-table">
           <div class="rt-table-item" v-for="item in items" :key="item.assetId">
             <div class="rt-table-item__img-box">
-              <img :src="item.cover_url" alt="nft">
+              <img :src="item.cover_url || item.img" alt="nft">
             </div>
             <div class="rt-table-item-info">
               <a :href="getNftLink(item)" target="_blank" class="rt-table-item-info__name">{{ item.name }}</a>
               <div class="rt-table-item-info__score">Score: {{ Number(item.Score) }}</div>
-              <div class="rt-table-item-info__rank">Rank: <span>{{ item.rank }}</span> / 10000</div>
+              <div class="rt-table-item-info__rank">Rank: <span>{{ item.rank || item.ranking }}</span> / 10000</div>
             </div>
           </div>
         </div>
@@ -126,13 +126,14 @@ export default {
       return `https://crypto.com/nft/collection/${collectionId}?asset=${item.assetId || item.id}&edition=${item.defaultEditionId}&detail-page=MARKETPLACE`
     },
     async loadItems() {
-      const { data } = await this.$axios.get('/search', {
+      const { data } = await this.$axios.get(this.collection === 'genqbabies' ? 'https://x-api.madharesociety.com/search' : '/search', {
         params: {
           page: this.currentPageNumber,
           sort_by: this.sort,
           sort: this.sort === 'rarity' ? 'DESC' : 'ASC',
           collection: this.collection,
-          query: this.search
+          query: this.search,
+          per_page: 12,
         }
       })
 
