@@ -61,6 +61,24 @@ export default {
     padding-top: 150px;
     padding-bottom: 75px;
     flex: 1 1 auto;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      padding-bottom: 100%;
+      translate: -50% -50%;
+      background: radial-gradient(50% 51.79% at 50% 50%, rgba(252, 5, 192, 0.16) 17.71%, rgba(96, 3, 169, 0) 78.12%);
+      z-index: -1;
+
+      @media (max-width: 1200px) {
+        padding-bottom: 200%;
+      }
+    }
 
     @media (max-width: 1200px) {
       padding-top: 100px;
